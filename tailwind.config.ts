@@ -7,6 +7,19 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+padding: '1rem',
+center: true,
+    },
+    screens:{
+xs: "450px",
+sm: "576ppx",
+md: "768px",
+lg: "992px",
+xl: "1024px",
+xxl: "1280px",
+"2xl": "1536px",
+    },
     extend: {
       colors: {
         background: "var(--background)",
