@@ -21,6 +21,9 @@ xxl: "1280px",
 "2xl": "1536px",
     },
     extend: {
+      fontFamily: {
+        bricolage: ["Bricolage Grotesque", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

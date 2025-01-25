@@ -24,8 +24,8 @@
     };
 
     return (
-        <div className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="flex justify-between items-center px-6 py-4 md:px-8 lg:px-16">
+        <div className="sticky top-0 z-50 bg-white lg:px- lg:py- lg:my-6 lg:mx-16 rounded-md shadow-md">
+        <div className="flex justify-between items-center px-6 py-4 md:px-8 lg:px-8">
             {/* Logo */}
             <Link href="/">
             <Image src="/logo.png" alt="Logo" width={100} height={100} className="cursor-pointer" />
