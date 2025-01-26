@@ -54,7 +54,7 @@ const Ourservice = () => {
       </main>
 
       {/* secone one start here */}
-      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-10">
+      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5">
         {/* Right Section (3 columns) */}
         <div className="col-span-1 lg:col-span-3 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden">
           {/* Image */}
@@ -103,7 +103,7 @@ const Ourservice = () => {
       </main>
 
       {/* third section */}
-      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-10">
+      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5">
         {/* Left Section (4 columns) */}
         <div className="col-span-1 lg:col-span-4 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden">
           {/* Image */}
