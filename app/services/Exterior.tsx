@@ -4,12 +4,12 @@ import React from "react";
 const Exterior = () => {
   return (
     <section className="mt-10 md:mt-24 flex-col flex  container lg:w-11/12 ">
-      <div className="lg:grid grid-cols-2 flex-col justify-center gap-10">
+      <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
         <div className="col-span-1 lg:flex justify-end hidden">
           <Image
-            src={"/Group 13.png"}
+            src={"/house1.png"}
             alt="hero"
-            width={500}
+            width={600}
             height={300}
             quality={100}
             className="object-cover"
