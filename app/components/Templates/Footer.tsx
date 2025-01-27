@@ -13,7 +13,7 @@ const Footer = () => {
       </h1>
       <main className=" flex flex-col lg:flex-row justify-between">
         {/* first side  */}
-        <div className="flex flex-col  lg::flex-row gap-4 mt-5 items-center">
+        <div className="flex flex-col  lg:flex-row gap-4 mt-5 items-center">
           <Image src={"/last.png"} alt="" width={1000} height={1000} />
 
           <div className="flex flex-col gap-8 ">
