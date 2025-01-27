@@ -3,7 +3,7 @@ import React from "react";
 
 const Exterior = () => {
   return (
-    <section className="mt-10 md:mt-24 flex-col container lg:w-11/12 ">
+    <section className="mt-10 md:mt-24 flex-col flex  container lg:w-11/12 ">
       <div className="lg:grid grid-cols-2 flex-col justify-center gap-10">
         <div className="col-span-1 lg:flex justify-end hidden">
           <Image
@@ -52,6 +52,91 @@ const Exterior = () => {
             of your exterior repair needs!.
           </p>
         </main>
+      </div>
+
+      <div className="lg:grid grid-cols-3 mt-16 md:mt-24 gap-4 flex-col container  ">
+        <div className="col-span-1 lg:flex hidden justify-start ">
+          <Image
+            src={"/Group 14.png"}
+            alt="hero"
+            width={500}
+            height={300}
+            quality={100}
+            className="object-cover"
+          />
+        </div>
+        <main className=" col-span-2 flex flex-col items-center lg:items-start  lg:justify-between ">
+          <div className="lg:text-3xl flex flex-col gap-3 text-center lg:text-center   ">
+            <p className="space-x-20  ">Deck Repairs</p>
+
+            <p className="space-x-20 text-[#032759] font-bold bg-white md:p-3 p-3  rounded-md">
+              At VY Construction, we strive to provide our customers with the
+              <span className="text-[#056FC5]">
+                {" "}
+                best deck repair services available.
+              </span>
+            </p>
+          </div>
+
+          <div className="col-span-1 flex lg:hidden py-7 justify-start ">
+            <Image
+              src={"/Group 15.png"}
+              alt="hero"
+              width={500}
+              height={300}
+              quality={100}
+              className="object-cover"
+            />
+          </div>
+
+          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 justify-end gap-10 py-10">
+            <div className="col-span-1">
+              <Image
+                src={"/10.jpeg"}
+                alt="hero"
+                width={500}
+                height={300}
+                quality={100}
+                className="object-cover"
+              />
+            </div>
+            <p className="lg:text-xl col-span-1 md:text-xl text- text-[#323232] font-medium">
+              We understand that a deck is an important and integral part of any
+              house - it’s where families gather for meals or entertainment in
+              the warmer months, and it can be a great focal point for curbside
+              appeal. That’s why we take every deck repair job seriously and do
+              our utmost to ensure that your outdoor space is safe and secure.
+            </p>
+          </div>
+        </main>
+      </div>
+
+      <div className="flex flex-col gap-3 py-10 md:text-xl">
+        <p>
+          We begin each job by inspecting your existing deck to determine if
+          there are any structural problems that need to be addressed. Then we
+          make sure all connections are secure, boards are level, nails have
+          been properly installed, staircases meet safety standards, railings
+          are firmly fastened, and the overall integrity of the structure is
+          sound. We also check for any signs of decay or rot and replace
+          affected boards as needed.
+        </p>
+
+        <p>
+          Once our deck repair work is complete, we can then help you choose
+          from a variety of options to enhance your outdoor space, such as
+          adding built-in benches, trellises, pergolas, and more. Our
+          experienced team will ensure that all elements are properly installed
+          for years of safe and enjoyable use.
+        </p>
+
+        <p>
+          At VY Construction, we take pride in providing top-quality services to
+          our customers. With our expertise in deck repairs and enhancements,
+          you can trust that your outdoor space will be secure and beautiful for
+          years to come. Contact us today to learn more about how we can help
+          make your home’s outdoor space more inviting.
+        </p>
       </div>
     </section>
   );
