@@ -19,7 +19,7 @@ const HeroSection = () => {
         Serving Homeowners, HOA&apos;s, Property Management Companies and
         Commercial Properties.
       </p>
-      <form className="lg:w-3/4 w-full">
+      <form data-aos="fade-up" className="lg:w-3/4 w-full">
         <div className="relative w- ">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div>
           <input
@@ -38,7 +38,7 @@ const HeroSection = () => {
         </div>
       </form>
 
-      <div className="lg:w-[70rem]   w-[30rem]">
+      <div data-aos="fade-up" className="lg:w-[65rem]   w-[30rem]">
         <Image
           src="/hero.png"
           alt="hero"

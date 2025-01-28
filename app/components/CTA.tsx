@@ -9,12 +9,15 @@ const CTA = () => {
   return (
     <section className="flex flex-col gap-3">
       {/* first section */}
-      <div className="lg:grid grid-cols-2 mt-10 md:mt-24 flex-col container ">
-        <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between ">
+      <div className="lg:grid grid-cols-2 mt-10 md:mt-24 flex-col container lg:w-11/12 gap-16 justify-center ">
+        <main
+          data-aos="fade-right"
+          className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between  "
+        >
           <div className=" flex items-start py-2 lg:py-0  ">
             <div className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    ">
               <BsHouseDoorFill className="text-[#056FC5] text-xl" />
-              <p className="text-[#056FC5] ]">Who we are</p>
+              <p className="text-[#056FC5] ]">Who we are </p>
             </div>
           </div>
           <p className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium">
@@ -26,7 +29,10 @@ const CTA = () => {
             builds, siding and gutter guard installation.
           </p>
 
-          <div className="col-span-1 flex justify-end lg:hidden py-10">
+          <div
+            data-aos="fade-left"
+            className="col-span-1 flex justify-end lg:hidden py-10"
+          >
             <Image
               src={"/house1.png"}
               alt="hero"
@@ -52,11 +58,15 @@ const CTA = () => {
             <FaFacebook className="text-[#056FC5] text-2xl lg:text-4xl" />
           </div>
         </main>
-        <div className="col-span-1 lg:flex justify-end hidden">
+
+        <div
+          data-aos="fade-left"
+          className="col-span-1 lg:flex justify-end hidden"
+        >
           <Image
             src={"/house1.png"}
             alt="hero"
-            width={500}
+            width={600}
             height={300}
             quality={100}
             className="object-cover"
@@ -66,8 +76,11 @@ const CTA = () => {
 
       {/* section section */}
 
-      <div className="lg:grid grid-cols-2 mt-10 md:mt-24 flex-col container  ">
-        <div className="col-span-1 lg:flex justify-start hidden">
+      <div className="lg:grid grid-cols-2 mt-10 md:mt-24 flex-col container lg:w-11/12 justify-center ">
+        <div
+          data-aos="fade-right"
+          className="col-span-1 lg:flex justify-start hidden"
+        >
           <Image
             src={"/house2.png"}
             alt="hero"
@@ -77,8 +90,11 @@ const CTA = () => {
             className="object-cover"
           />
         </div>
-        <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between ">
-          <div className="lg:text-4xl text-2xl text-center bg-white md:p-3 py-3 md:py-0  rounded-md font-medium">
+        <main
+          data-aos="fade-left"
+          className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between "
+        >
+          <div className="lg:text-3xl text-2xl font-bold text-start bg-white md:p-5 py-3 md:py-5    rounded-md ">
             <p className="space-x-20">
               We specialize in building pergolas and patio covers to give your
               home{" "}
@@ -88,7 +104,10 @@ const CTA = () => {
             </p>
           </div>
 
-          <div className="col-span-1 flex justify-end lg:hidden py-10">
+          <div
+            data-aos="fade-right"
+            className="col-span-1 flex justify-end lg:hidden py-10"
+          >
             <Image
               src={"/house2.png"}
               alt="hero"
@@ -99,7 +118,10 @@ const CTA = () => {
             />
           </div>
 
-          <p className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium">
+          <p
+            data-aos="fade-left"
+            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+          >
             With our experience and dedication to providing excellent services,
             you can trust that your home will look its best with VY
             Construction. Contact us today to learn more about our services and
@@ -108,7 +130,7 @@ const CTA = () => {
           </p>
 
           <Link
-            href={"/aboutus"}
+            href={"/about"}
             className="flex flex-row items-center gap-4 lg:text-xl"
           >
             <p className="text-[#056FC5] ">More About us </p>
