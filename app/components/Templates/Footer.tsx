@@ -8,15 +8,18 @@ import { IoCall } from "react-icons/io5";
 const Footer = () => {
   return (
     <section className="container mt-24 flex flex-col ">
-      <h1 className="font-bold lg:text-3xl text-[#032759]">
+      <h1 className="font-bold hidden md:flex text-xl py-7 lg:text-3xl text-[#032759]">
         Get in touch with us
       </h1>
-      <main className=" flex flex-col lg:flex-row justify-between">
+      <main className=" flex flex-col-reverse gap-10 lg:flex-row md:justify-between ">
         {/* first side  */}
         <div className="flex flex-col  lg:flex-row gap-4 mt-5 items-center">
+          <h1 className="font-bold md:hidden flex text-xl py-7 lg:text-3xl text-[#032759]">
+            Get in touch with us
+          </h1>
           <Image src={"/last.png"} alt="" width={1000} height={1000} />
 
-          <div className="flex flex-col gap-8 ">
+          <div className="flex flex-col gap-8 bg-[#F7F7F7] p-3 ">
             <p className="flex items-center font-bold gap-3">
               {" "}
               <IoLocation className="text-[#056FC5]" />
@@ -56,7 +59,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 bg-[#F7F7F7] p-3">
               <p className="text-[#757575] flex items-center gap-2">
                 <IoLocation className="" />
                 Concord, CA 94521
@@ -81,7 +84,7 @@ const Footer = () => {
 
         {/* second size  */}
         <div className="w-full flex flex-col gap-4">
-          <h1 className="text-3xl font-bold text-[#032759]">
+          <h1 className="md:text-3xl font-bold text-[#032759]">
             Let&apos;s Discuss Your{" "}
             <span className="text-[#056FC5]">Next Project!</span>
           </h1>

@@ -5,7 +5,10 @@ const Testimonials = () => {
   return (
     <section className="container mt-24 flex flex-col justify-center bg-[#95A0FE1C] lg:p-10">
       <div className=" items-start flex justify-center">
-        <div className="bg-white gap-3  flex flex-col justify-center items-center p-3 rounded-md">
+        <div
+          data-aos="fade-up"
+          className="bg-white gap-3 mt-10 flex flex-col w-full md:w-fit justify-center items-center p-3 rounded-xl"
+        >
           <p className="text-[#056FC5] font-bold flex gap-3 items-center bg-[#056FC533] p-2 rounded-md">
             <BiSolidMessage />
             Testimonials
@@ -17,7 +20,10 @@ const Testimonials = () => {
       </div>
       <main className="lg:grid grid-cols-1 flex flex-col lg:grid-cols-3 gap-5 mt-10">
         <div className="col-span-2 lg:grid grid-cols-1 flex flex-col gap-3 lg:grid-cols-2">
-          <div className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
+          <div
+            data-aos="fade-left"
+            className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]"
+          >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
                 George S.  <span className="font-normal">Concord, CA</span>
@@ -36,7 +42,10 @@ const Testimonials = () => {
             </p>
           </div>
 
-          <div className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
+          <div
+            data-aos="fade-right"
+            className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]"
+          >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
                 George S.  <span className="font-normal">Concord, CA</span>
@@ -55,7 +64,10 @@ const Testimonials = () => {
             </p>
           </div>
 
-          <div className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
+          <div
+            data-aos="fade-left"
+            className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]"
+          >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
                 George S.  <span className="font-normal">Concord, CA</span>
@@ -74,7 +86,10 @@ const Testimonials = () => {
             </p>
           </div>
 
-          <div className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
+          <div
+            data-aos="fade-right"
+            className="col-span-1  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]"
+          >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
                 George S.  <span className="font-normal">Concord, CA</span>
@@ -93,7 +108,10 @@ const Testimonials = () => {
             </p>
           </div>
 
-          <div className="col-span-2  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
+          <div
+            data-aos="fade-left"
+            className="col-span-2  flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]"
+          >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
                 George S.  <span className="font-normal">Concord, CA</span>
@@ -112,7 +130,7 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-1 flex flex-col gap-3">
+        <div data-aos="fade-right" className="col-span-1 flex flex-col gap-3">
           <div className="flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
@@ -142,7 +160,10 @@ const Testimonials = () => {
               Construction.
             </p>
           </div>
-          <div className="flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]">
+          <div
+            data-aos="fade-left"
+            className="flex flex-col gap-2 p-2 rounded-lg bg-[#F7F7F7]"
+          >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
                 George S.  <span className="font-normal">Concord, CA</span>
@@ -162,9 +183,10 @@ const Testimonials = () => {
           </div>
         </div>
       </main>
-
-      <div className=" font-bold lg:text-xl p-6 relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#323232] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2 text-[#323232]">
-        Integrity. Quality. Punctuality
+      <div className="pl-6 ">
+        <div className="  md:pl-0 font-bold lg:text-xl md: p-6 relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#323232] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2 text-[#323232]">
+          Integrity. Quality. Punctuality
+        </div>
       </div>
     </section>
   );

@@ -94,7 +94,7 @@ const CTA = () => {
           data-aos="fade-left"
           className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between "
         >
-          <div className="lg:text-3xl text-2xl font-bold text-start bg-white md:p-5 py-3 md:py-5    rounded-md ">
+          <div className="lg:text-3xl text- p-3 font-bold text-start bg-white md:p-5 py-3 md:py-5    rounded-md ">
             <p className="space-x-20">
               We specialize in building pergolas and patio covers to give your
               home{" "}
@@ -131,7 +131,7 @@ const CTA = () => {
 
           <Link
             href={"/about"}
-            className="flex flex-row items-center gap-4 lg:text-xl"
+            className="flex flex-row items-center pt-4 gap-4 lg:text-xl"
           >
             <p className="text-[#056FC5] ">More About us </p>
             <GoArrowRight className="text-[#056FC5] text-2xl lg:text-4xl" />
