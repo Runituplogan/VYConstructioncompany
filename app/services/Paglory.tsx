@@ -16,11 +16,11 @@ const Paglory = () => {
           </div>
           <p className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium">
             At VY Construction, we understand that you want to make the most out
-            of your outdoor space. That's why we specialize in building custom
-            pergolas and patio covers. Our experienced team of professionals can
-            help you design and build a structure that not only adds beauty to
-            your yard but also provides shade, privacy, and protection from the
-            elements.
+            of your outdoor space. That&apos;s why we specialize in building
+            custom pergolas and patio covers. Our experienced team of
+            professionals can help you design and build a structure that not
+            only adds beauty to your yard but also provides shade, privacy, and
+            protection from the elements.
           </p>
 
           <div className="col-span-1 flex justify-end lg:hidden py-10">
