@@ -28,7 +28,7 @@ const OurQuality = () => {
               <p className="text-[#056FC5] font-bold p-2 rounded-lg bg-[#056FC533] ">
                 Our Quality Guarantee
               </p>
-              <h1 className="md:text-2xl text-center md:text-center font-bold text-[#032759]">
+              <h1 className="md:text-2xl text-xl text-center md:text-center font-bold text-[#032759]">
                 Committed to Excellence, Guaranteed to Last.
               </h1>
             </div>
