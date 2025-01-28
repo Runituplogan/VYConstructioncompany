@@ -6,12 +6,18 @@ const Siding = () => {
     <section className="flex flex-col mt-10 lg:mt-24 gap-16 container">
       <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
         <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-10  ">
-          <div className="  text-center justify-center w-full py-2 lg:py-0  ">
+          <div
+            data-aos="fade-up"
+            className="  text-center justify-center w-full py-2 lg:py-0  "
+          >
             <div className="flex flex-row text-center items-center justify-center text gap-2 font-bold p-2 rounded-lg bg-white    ">
-              <p className="text-[#032759] text-2xl ">Siding</p>
+              <p className="text-[#032759] md:text-2xl text-xl ">Siding</p>
             </div>
           </div>
-          <p className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium">
+          <p
+            data-aos="fade-right"
+            className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium"
+          >
             At VY Construction, we understand the importance of having a
             beautiful home exterior to be proud of. That’s why we specialize in
             siding services for residential homes; from large-scale projects to
@@ -23,7 +29,10 @@ const Siding = () => {
             free consultation!
           </p>
 
-          <div className="col-span-1 flex justify-end lg:hidden py-10">
+          <div
+            data-aos="fade-left"
+            className="col-span-1 flex justify-end lg:hidden py-10"
+          >
             <Image
               src={"/Group 20.png"}
               alt="hero"
@@ -34,7 +43,7 @@ const Siding = () => {
             />
           </div>
 
-          <div>
+          <div data-aos="fade-right">
             <p className="lg:text-3xl md:text-xl font-bold  text-[#056FC5] ">
               We offer a full range of siding services, including:
             </p>
@@ -59,7 +68,10 @@ const Siding = () => {
           </div>
         </main>
 
-        <div className="col-span-1 lg:flex justify-end hidden">
+        <div
+          data-aos="fade-left"
+          className="col-span-1 lg:flex justify-end hidden"
+        >
           <Image
             src={"/Group 20.png"}
             alt="hero"
@@ -73,13 +85,29 @@ const Siding = () => {
 
       <main className=" flex flex-col items-center justify-center lg:items-start  lg:gap-10  ">
         <div className="  text-center flex justify-center w-full py-2 lg:py-0  ">
-          <div className="flex flex-row text-center items-center justify-center text gap-2 font-bold p-2 rounded-lg bg-white    ">
-            <p className="text-[#032759] text-2xl ">
+          <div
+            data-aos="fade-up"
+            className="flex flex-row text-center items-center justify-center text gap-2 font-bold p-2 rounded-lg bg-white    "
+          >
+            <p className="text-[#032759] md:text-2xl  text-xl">
               Gutter Guard Installation
             </p>
           </div>
         </div>
-        <p className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium">
+        <div className="col-span-1 py-4 flex md:hidden    ">
+          <Image
+            src={"/Group 21.png"}
+            alt="hero"
+            width={500}
+            height={300}
+            quality={100}
+            className="object-cover"
+          />
+        </div>
+        <p
+          data-aos="fade-right"
+          className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium"
+        >
           VY Construction offers the best gutter guard installation services in
           the region. Our experienced team of professionals are committed to
           providing top-quality work, ensuring that your gutters will remain
@@ -94,31 +122,30 @@ const Siding = () => {
           guard installation services. We look forward to helping you protect
           your home and keep it looking great!
         </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-between  items-center">
-          <div className="col-span-1    ">
-            <Image
-              src={"/Group 21.png"}
-              alt="hero"
-              width={500}
-              height={300}
-              quality={100}
-              className="object-cover"
-            />
-          </div>
-
-          <div className="col-span-1   ">
-            <Image
-              src={"/Frame 74.png"}
-              alt="hero"
-              width={500}
-              height={300}
-              quality={100}
-              className="object-cover"
-            />
-          </div>
-        </div>
       </main>
+      <div className="flex flex-col md:flex-row  gap-10 justify-center items-center py-4 md:py-10 ">
+        <div data-aos="fade-right" className="col-span-1 md:flex hidden    ">
+          <Image
+            src={"/Group 21.png"}
+            alt="hero"
+            width={500}
+            height={300}
+            quality={100}
+            className="object-cover"
+          />
+        </div>
+
+        <div data-aos="fade-right" className="col-span-1    ">
+          <Image
+            src={"/Frame 74.png"}
+            alt="hero"
+            width={500}
+            height={300}
+            quality={100}
+            className="object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
 };
