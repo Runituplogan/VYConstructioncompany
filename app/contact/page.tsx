@@ -3,13 +3,13 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="container">
-      <section className="md:mt-24 mt-10  flex flex-col lg:flex-row items-center justify-center md:relative">
+    <div>
+      <section className="md:mt-24 mt-16 container flex flex-col lg:flex-row items-center justify-center md:relative">
         {/* Main Content */}
-        <main className="flex flex-col gap-5 md:p-6 rounded-lg  md:z-10   md:relative lg:-right-32">
+        <main className="flex flex-col gap-10 md:gap-5 md:p-6 rounded-lg  md:z-10   md:relative lg:-right-32">
           <div
             data-aos="fade-up"
-            className="border-[#056FC5] bg-white border-2 p-4 rounded-md flex flex-col gap-2"
+            className="border-[#056FC5] bg-white border-2 p-4 rounded-md flex  md:text-center items-center flex-col gap-2"
           >
             <p className="md:text-5xl text-2xl font-bold text-[#032759]">
               Connect with us
@@ -17,16 +17,25 @@ const page = () => {
             </p>
           </div>
 
-          <div className="md:relative z-0  md:hidden">
-            <Image src="/l1.png" alt="Why Choose Us" width={570} height={500} />
-          </div>
-
-          <div className="font-bold text-xl flex flex-col gap-2 list-none pl-6">
-            <p className="text-xl text-[#757575] w-96 ">
+          <div className="font-bold text-xl flex flex-col gap-2 list-none md:pl-6">
+            <p
+              data-aos="fade-left"
+              className="text-xl text-center md:text-start text-[#757575] md:w-96 "
+            >
               {" "}
               Reach out today to discuss your project and discover how we can
               bring your vision to life with quality craftsmanship.
             </p>
+
+            <div className="md:relative z-0 py-8  md:hidden">
+              <Image
+                src="/l1.png"
+                alt="Why Choose Us"
+                width={570}
+                height={500}
+              />
+            </div>
+
             <p className="font-bold text-2xl text-[#323232]">
               Request Your Free Estimate Today!
             </p>
