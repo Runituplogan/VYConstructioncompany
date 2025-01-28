@@ -21,12 +21,18 @@ const About = () => {
 
         <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between  ">
           <div className=" flex items-start py-2 lg:py-0  ">
-            <div className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    ">
+            <div
+              data-aos="fade-up"
+              className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    "
+            >
               <BsHouseDoorFill className="text-[#056FC5] text-xl" />
               <p className="text-[#056FC5] ]">About VY Construction</p>
             </div>
           </div>
-          <p className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium">
+          <p
+            data-aos="fade-left"
+            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+          >
             At VY Construction, we understand that it&apos;s important for your
             home to look its best. That&apos;s why our team consists of
             experienced professionals who are committed to providing quality
@@ -35,7 +41,10 @@ const About = () => {
             builds, siding and gutter guard installation.
           </p>
 
-          <div className="col-span-1 flex justify-end lg:hidden py-10">
+          <div
+            data-aos="fade-right"
+            className="col-span-1 flex justify-end lg:hidden py-10"
+          >
             <Image
               src={"/house1.png"}
               alt="hero"
@@ -46,7 +55,10 @@ const About = () => {
             />
           </div>
 
-          <div className="lg:text-2xl md:text-xl text-[#032759] font-medium">
+          <div
+            data-aos="fade-left"
+            className="lg:text-2xl md:text-xl text-[#032759] font-medium"
+          >
             <p className="font-bold">We Offer:</p>
             <p className="space-x-20">
               Wood Rot Repair • Termite Damage Repair • Deck Repairs • New Deck
@@ -77,7 +89,10 @@ const About = () => {
           />
         </div>
         <main className=" col-span-2 flex flex-col items-center lg:items-start  lg:justify-between ">
-          <div className="lg:text-3xl font-bold text-xl text-center lg:text-start bg-white md:p-3 p-3 md:py-0  rounded-md ">
+          <div
+            data-aos="fade-up"
+            className="lg:text-3xl font-bold text-xl text-center lg:text-start bg-white md:p-3 p-3 md:py-0  rounded-md "
+          >
             <p className="space-x-20 ">
               VY Construction delivers quality exterior repairs and improvements
               with a supportive team ready to help
@@ -85,7 +100,10 @@ const About = () => {
             </p>
           </div>
 
-          <div className="col-span-1 flex lg:hidden py-7 justify-start ">
+          <div
+            data-aos="fade-right"
+            className="col-span-1 flex lg:hidden py-7 justify-start "
+          >
             <Image
               src={"/12.png"}
               alt="hero"
@@ -97,7 +115,7 @@ const About = () => {
           </div>
 
           <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 justify-end gap-10 py-10">
-            <div className="col-span-1">
+            <div data-aos="fade-left" className="col-span-1">
               <Image
                 src={"/10.jpeg"}
                 alt="hero"
@@ -107,7 +125,10 @@ const About = () => {
                 className="object-cover"
               />
             </div>
-            <p className="lg:text-2xl col-span-1 md:text-xl text-justify text-[#323232] font-medium">
+            <p
+              data-aos="fade-right"
+              className="lg:text-2xl col-span-1 md:text-xl text-justify text-[#323232] font-medium"
+            >
               At VY Construction, we take pride in providing quality exterior
               repair and improvement services. We understand that not everyone
               has experience in this area, so our friendly team is always ready
