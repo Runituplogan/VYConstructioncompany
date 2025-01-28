@@ -8,11 +8,14 @@ const HeroSection = () => {
         <Image src="/fig.png" alt="hero" width={20} height={10} />
         Welcome to VY Construction
       </p>
-      <h1 className="lg:text-7xl md:text-5xl text-3xl text-[#032759] font-bricolage  font-bold">
+      <h1
+        data-aos="fade-up"
+        className="lg:text-7xl md:text-5xl text-3xl text-[#032759] font-bricolage  font-bold"
+      >
         General Contractor in East Bay{" "}
         <span className="text-[#056FC5]">California</span>
       </h1>
-      <p className="lg:text-4xl text-[#757575] ">
+      <p data-aos="fade-up" className="lg:text-4xl text-[#757575] ">
         Serving Homeowners, HOA&apos;s, Property Management Companies and
         Commercial Properties.
       </p>
