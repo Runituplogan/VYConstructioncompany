@@ -5,7 +5,10 @@ const OurQuality = () => {
   return (
     <section className=" flex flex-col items-center justify-center container lg:w-11/12 mt-10 md:my-28">
       <div className="lg:grid grid-cols-2  flex-col   gap-10 justify-center ">
-        <div className="col-span-1 lg:flex justify-end hidden">
+        <div
+          data-aos="fade-right"
+          className="col-span-1 lg:flex justify-end hidden"
+        >
           <Image
             src={"/Group 12.png"}
             alt="hero"
@@ -16,13 +19,16 @@ const OurQuality = () => {
           />
         </div>
 
-        <main className=" col-span-1 flex flex-col items-center lg:items-center lg:gap-10   ">
+        <main
+          data-aos="fade-left"
+          className=" col-span-1 flex flex-col items-center lg:items-center lg:gap-10   "
+        >
           <div className=" flex items-start py-2 lg:py-0  ">
             <div className="flex flex-col items-center justify-center text gap-2    ">
               <p className="text-[#056FC5] font-bold p-2 rounded-lg bg-[#056FC533] ">
                 Our Quality Guarantee
               </p>
-              <h1 className="text-2xl font-bold text-[#032759]">
+              <h1 className="md:text-2xl text-center md:text-center font-bold text-[#032759]">
                 Committed to Excellence, Guaranteed to Last.
               </h1>
             </div>
@@ -35,7 +41,10 @@ const OurQuality = () => {
             exceeds the expectations of our clients.
           </p>
 
-          <div className="col-span-1 flex justify-end lg:hidden py-10">
+          <div
+            data-aos="fade-left"
+            className="col-span-1 flex justify-end lg:hidden py-10"
+          >
             <Image
               src={"/house1.png"}
               alt="hero"
@@ -56,7 +65,10 @@ const OurQuality = () => {
           </p>
         </main>
       </div>
-      <p className="lg:text-sm text-sm font-bold border-2 p-2 lg:p-4 mt-4 lg:m-8 rounded-md text-center lg:w-4/5 border-[#056FC59C] md:text-xl  text-[#323232] ">
+      <p
+        data-aos="fade-up"
+        className="lg:text-sm text-sm font-bold border-2 p-2 lg:p-4 mt-4 lg:m-8 rounded-md text-center lg:w-4/5 border-[#056FC59C] md:text-xl  text-[#323232] "
+      >
         Our commitment goes beyond just quality—we also ensure safety on the job
         site, with all of our workers following a strict code of conduct. We
         believe in taking every precaution to ensure our clients’ satisfaction,
