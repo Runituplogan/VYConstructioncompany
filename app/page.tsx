@@ -6,7 +6,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 
 export default function Home() {
   return (
-    <section>
+    <section className="overflow-hidden">
       <HeroSection />
       <CTA />
       <Ourservice />

@@ -38,7 +38,7 @@ const HeroSection = () => {
         </div>
       </form>
 
-      <div className="lg:w-[70rem] w-full">
+      <div className="lg:w-[70rem]   w-[30rem]">
         <Image
           src="/hero.png"
           alt="hero"
