@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-white lg:px- lg:py- lg:my-6 lg:mx-16 rounded-md shadow-md">
+    <div className="sticky top-0 z-50 bg-white lg:px- lg:py- lg:my-6 lg:mx-11 rounded-md shadow-md">
       <div className="flex justify-between items-center px-6 py-4 md:px-8 lg:px-8">
         {/* Logo */}
         <Link href="/">
