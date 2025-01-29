@@ -18,7 +18,7 @@ const Hero = () => {
           className="lg:text-7xl md:text-5xl text-2xl text-[#032759] font-bricolage  font-bold"
         >
           Building Excellence with Integrity and
-          <span className="text-[#056FC5]">Precision</span>
+          <span className="text-[#056FC5]"> Precision</span>
         </h1>
 
         <div data-aos="fade-up" className="lg:w-[65rem]   w-[30rem]">

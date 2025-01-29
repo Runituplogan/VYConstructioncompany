@@ -6,7 +6,7 @@ import OurQuality from "./OurQuality";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <About />
       <Ourprocess />

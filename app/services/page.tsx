@@ -6,7 +6,7 @@ import Siding from "./Siding";
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Exterior />
       <Paglory />

@@ -33,127 +33,124 @@ const Ourprocess = () => {
         </h1>
       </div>
 
-      {/* First Section */}
-      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-10">
-        {/* Left Section (4 columns) */}
-        <div
-          data-aos="fade-right"
-          className="col-span-1 lg:col-span-4 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[500px] h-[400px]"
-        >
-          {/* Image */}
-          <Image
-            src="/b1.png"
-            alt="Overlay Example"
-            width={1000}
-            height={1000}
-            className="object-cover w-full h-full rounded-2xl"
-          />
+      <div className="bg-[#056FC54] md:px-4 lg:px-20 mt-24 w-full">
+        <div className="relative">
+          <main className="flex flex-col md:flex-row gap-4 ">
+            <div
+              data-aos="fade-right"
+              className="flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:w-[60%]"
+            >
+              {/* Image */}
+              <Image
+                width={1000}
+                height={1000}
+                src={"/b1.png"}
+                alt="Overlay Example"
+                className="object-cover w-full h-full rounded-2xl"
+              />
 
-          {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-            <div className="bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-              <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md ">
-                Preconstruction Design
-              </p>
-              <p className="text-start text-sm md:text-md  ">
-                VY Construction’s Preconstruction Design phase is where our team
-                of experts works together to design a customized solution
-                tailored to meet the needs and budget of each project.
-              </p>
+              {/* Overlay Text */}
+              <div className="absolute inset-0 z-10 flex flex-col p-8 rounded-2xl gap-4 justify-end bg-black/50 text-white text-lg font-bold">
+                <div className="lg:-translate-x-6 lg:-translate-y-12 py-4 px-8 bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black lg:w-[90%]">
+                  <p className="p-3 !pb-1.5 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
+                    Preconstruction Design
+                  </p>
+                  <p className="text-start text-sm md:text-md">
+                    VY Construction’s Preconstruction Design phase is where our
+                    team of experts works together to design a customized
+                    solution tailored to meet the needs and budget of each
+                    project.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* Right Section (3 columns) */}
-        <div
-          data-aos="fade-left"
-          className="col-span-1 lg:col-span-3 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[500px] h-[400px]"
-        >
-          {/* Image */}
-          <Image
-            src="/b2.png"
-            alt="Overlay Example"
-            width={1000}
-            height={1000}
-            className="object-cover w-full h-full rounded-2xl"
-          />
+            {/* Right Section (3 columns) */}
+            <div
+              data-aos="fade-left col-span-1"
+              className="lg:w-[40%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:!mt-24"
+            >
+              {/* Image */}
+              <Image
+                src={"/b2.png"}
+                alt="Overlay Example"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full rounded-2xl"
+              />
 
-          {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-            <div className="bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-              <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md ">
-                Design & Construction Estimate
-              </p>
-              <p className="text-start text-sm md:text-md  ">
-                Our team starts by providing clients with a detailed design and
-                construction estimate to ensure that the project is within
-                budget.
-              </p>
+              {/* Overlay Text */}
+              <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
+                <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 !py-4 !px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
+                  <p className="p-3 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
+                    Design & Construction Estimate
+                  </p>
+                  <p className="text-start text-sm md:text-md">
+                    Our team starts by providing clients with a detailed design
+                    and construction estimate to ensure that the project is
+                    within budget.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </main>
+          </main>
 
-      {/* Second Section */}
-      <main
-        data-aos="fade-right"
-        className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5"
-      >
-        {/* Right Section (3 columns) */}
-        <div className="col-span-1 lg:col-span-3 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[500px]  h-[400px]">
-          {/* Image */}
-          <Image
-            src="/b3.png"
-            alt="Overlay Example"
-            width={1000}
-            height={1000}
-            className="object-cover w-full h-full rounded-2xl"
-          />
+          {/* second part */}
+          <main className="flex flex-col md:flex-row gap-4 !mt-4 h-[100%] w-full">
+            <div
+              data-aos="fade-right"
+              className="w-full lg:w-[55%] md:-top-20 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[350px] h-[400px] lg:-translate-y-18"
+            >
+              <Image
+                src={"/b3.png"}
+                alt="Overlay Example"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full rounded-2xl"
+              />
 
-          {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-            <div className="bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-              <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md ">
-                On-Site Consultations
-              </p>
-              <p className="text-start text-sm md:text-md  ">
-                At VY Construction, we understand that no two construction
-                projects are ever the same. That&apos;s why each project is
-                given a customized approach tailored to the unique needs of each
-                customer.
-              </p>
+              <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold !px-3 -translate-y-4">
+                <div className="bg-white text-[#757575] !px-6 !py-4 p-3 flex flex-col items-center border-2 border-black">
+                  <p className="p-3 md:text-2xl lg:text-xl !pb-1.5 font-bold text-[#26343D] rounded-md">
+                    On-Site Consultations
+                  </p>
+                  <p className="text-start text-sm md:text-md">
+                    At VY Construction, we understand that no two construction
+                    projects are ever the same. That&apos;s why each project is
+                    given a customized approach tailored to the unique needs of
+                    each customer.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* Left Section (4 columns) */}
-        <div
-          data-aos="fade-left"
-          className="col-span-1 lg:col-span-4 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[500px] h-[400px]"
-        >
-          {/* Image */}
-          <Image
-            src="/b4.png"
-            alt="Overlay Example"
-            width={1000}
-            height={1000}
-            className="object-cover w-full h-full rounded-2xl"
-          />
+            <div
+              data-aos="fade-left"
+              className="lg:w-[65%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[350px] h-[400px]"
+            >
+              <Image
+                src={"/b4.png"}
+                alt="Overlay Example"
+                width={1000}
+                height={1000}
+                className="object-cover w-full h-full rounded-2xl"
+              />
 
-          {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-            <div className="bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-              <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md ">
-                The Finishing Touches
-              </p>
-              <p className="text-start text-sm md:text-md  ">
-                The finishing touches involve all those small details that
-                create the overall look and feel of a construction project.
-              </p>
+              <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold !px-5">
+                <div className="bg-white text-[#757575] p-3 !py-4 !px-6 -translate-y-7 flex flex-col items-center border-2 border-black">
+                  <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md">
+                    The Finishing Touches
+                  </p>
+                  <p className="text-start text-sm md:text-md">
+                    The finishing touches involve all those small details that
+                    create the overall look and feel of a construction project.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
+          </main>
         </div>
-      </main>
+      </div>
     </section>
   );
 };
