@@ -35,67 +35,70 @@ const Ourprocess = () => {
 
       <div className="bg-[#056FC54] md:px-4 lg:px-20 mt-24 w-full">
         <div className="relative">
-          <main className="flex flex-col md:flex-row gap-4 ">
-            <div
-              data-aos="fade-right"
-              className="flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:w-[60%]"
-            >
-              {/* Image */}
-              <Image
-                width={1000}
-                height={1000}
-                src={"/b1.png"}
-                alt="Overlay Example"
-                className="object-cover w-full h-full rounded-2xl"
-              />
+          <div className="bg-[#056FC540]">
+            {/* First Main Section with Background Color */}
+            <main className="flex  flex-col md:flex-row gap-4 lg:px-20">
+              <div
+                data-aos="fade-right"
+                className="flex flex-col  items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:w-[60%]"
+              >
+                {/* Image */}
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={"/b1.png"}
+                  alt="Overlay Example"
+                  className="object-cover w-full h-full rounded-2xl"
+                />
 
-              {/* Overlay Text */}
-              <div className="absolute inset-0 z-10 flex flex-col p-8 rounded-2xl gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-                <div className="lg:-translate-x-6 lg:-translate-y-12 py-4 px-8 bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black lg:w-[90%]">
-                  <p className="p-3 !pb-1.5 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
-                    Preconstruction Design
-                  </p>
-                  <p className="text-start text-sm md:text-md">
-                    VY Construction’s Preconstruction Design phase is where our
-                    team of experts works together to design a customized
-                    solution tailored to meet the needs and budget of each
-                    project.
-                  </p>
+                {/* Overlay Text */}
+                <div className="absolute inset-0 z-10  flex flex-col p-8 rounded-2xl gap-4 justify-end bg-black/50 text-white text-lg font-bold">
+                  <div className="lg:-translate-x-6 lg:-translate-y-12 py-4 px-8 bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black lg:w-[90%]">
+                    <p className="p-3 !pb-1.5 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
+                      Preconstruction Design
+                    </p>
+                    <p className="text-start text-sm md:text-md">
+                      VY Construction’s Preconstruction Design phase is where
+                      our team of experts works together to design a customized
+                      solution tailored to meet the needs and budget of each
+                      project.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Right Section (3 columns) */}
-            <div
-              data-aos="fade-left col-span-1"
-              className="lg:w-[40%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:!mt-24"
-            >
-              {/* Image */}
-              <Image
-                src={"/b2.png"}
-                alt="Overlay Example"
-                width={1000}
-                height={1000}
-                className="object-cover w-full h-full rounded-2xl"
-              />
+              {/* Right Section (3 columns) */}
+              <div
+                data-aos="fade-left col-span-1"
+                className="lg:w-[40%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:!mt-24"
+              >
+                {/* Image */}
+                <Image
+                  src={"/b2.png"}
+                  alt="Overlay Example"
+                  width={1000}
+                  height={1000}
+                  className="object-cover w-full h-full rounded-2xl"
+                />
 
-              {/* Overlay Text */}
-              <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-                <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 !py-4 !px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-                  <p className="p-3 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
-                    Design & Construction Estimate
-                  </p>
-                  <p className="text-start text-sm md:text-md">
-                    Our team starts by providing clients with a detailed design
-                    and construction estimate to ensure that the project is
-                    within budget.
-                  </p>
+                {/* Overlay Text */}
+                <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
+                  <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 !py-4 !px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
+                    <p className="p-3 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
+                      Design & Construction Estimate
+                    </p>
+                    <p className="text-start text-sm md:text-md">
+                      Our team starts by providing clients with a detailed
+                      design and construction estimate to ensure that the
+                      project is within budget.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </main>
+            </main>
+          </div>
 
-          {/* second part */}
+          {/* Second Main Section */}
           <main className="flex flex-col md:flex-row gap-4 !mt-4 h-[100%] w-full">
             <div
               data-aos="fade-right"
