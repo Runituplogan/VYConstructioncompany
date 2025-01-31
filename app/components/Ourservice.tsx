@@ -3,7 +3,7 @@ import React from "react";
 
 const Ourservice = () => {
   return (
-    <section className="container mt-24 flex flex-col items-center">
+    <section className="p-5 mt-24 flex flex-col items-center w-full ">
       <h1
         data-aos="fade-up"
         className="md:text-4xl text-2xl text-[#032759] font-bold"
@@ -12,7 +12,7 @@ const Ourservice = () => {
       </h1>
 
       {/* First Section */}
-      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-10">
+      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-10  w-full lg:px-7 ">
         {/* Left Section (4 columns) */}
         <div
           data-aos="fade-right"
@@ -20,7 +20,7 @@ const Ourservice = () => {
         >
           {/* Image */}
           <Image
-            src="/1.png"
+            src="/u5.jpeg"
             alt="Overlay Example"
             width={1000}
             height={1000}
@@ -70,13 +70,13 @@ const Ourservice = () => {
       {/* Second Section */}
       <main
         data-aos="fade-right"
-        className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5"
+        className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5 w-full lg:px-7 "
       >
         {/* Right Section (3 columns) */}
         <div className="col-span-1 lg:col-span-3 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[500px]  h-[400px]">
           {/* Image */}
           <Image
-            src="/n3.png"
+            src="/u2.jpeg"
             alt="Overlay Example"
             width={1000}
             height={1000}
@@ -84,7 +84,7 @@ const Ourservice = () => {
           />
 
           {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col md:p-8 p-4 items-start gap-4 justify-end rounded-2xl bg-black/50 text-white text-lg">
+          <div className="absolute inset-0 flex flex-col md:p-8 p-4 items-start gap-4 justify-end rounded-2xl bg-black/50  bg-black/50 text-white text-lg">
             <p className="bg-white font-bold p-3 md:text-2xl text-sm rounded-md text-black">
               Siding
             </p>
@@ -103,7 +103,7 @@ const Ourservice = () => {
         >
           {/* Image */}
           <Image
-            src="/n4.png"
+            src="/u6.jpeg"
             alt="Overlay Example"
             width={1000}
             height={1000}
@@ -127,13 +127,13 @@ const Ourservice = () => {
       {/* Third Section */}
       <main
         data-aos="fade-right"
-        className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5"
+        className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-5 w-full lg:px-7 "
       >
         {/* Left Section (4 columns) */}
         <div className="col-span-1 lg:col-span-4 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[500px] h-[400px]">
           {/* Image */}
           <Image
-            src="/n2.png"
+            src="/u4.jpeg"
             alt="Overlay Example"
             width={1000}
             height={1000}
@@ -159,7 +159,7 @@ const Ourservice = () => {
         >
           {/* Image */}
           <Image
-            src="/n1.png"
+            src="/u3.jpeg"
             alt="Overlay Example"
             width={1000}
             height={1000}

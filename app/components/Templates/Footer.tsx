@@ -7,7 +7,7 @@ import { IoCall } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <section className="container mt-24 flex flex-col ">
+    <section className="container mt-16 flex flex-col  ">
       <h1 className="font-bold hidden md:flex text-xl py-7 lg:text-3xl text-[#032759]">
         Get in touch with us
       </h1>
@@ -17,7 +17,7 @@ const Footer = () => {
           <h1 className="font-bold md:hidden flex text-xl py-7 lg:text-3xl text-[#032759]">
             Get in touch with us
           </h1>
-          <Image src={"/last.png"} alt="" width={1000} height={1000} />
+          <Image src={"/Group 28.png"} alt="" width={1000} height={1000} />
 
           <div className="flex flex-col gap-8 bg-[#F7F7F7] p-3 ">
             <p className="flex items-center font-bold gap-3">
@@ -73,10 +73,10 @@ const Footer = () => {
                 925-914-7563
               </p>
 
-              <div className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-xl">
+              <div className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-">
+                <p className="text-[#056FC5] font-bold">Follow our social</p>
                 <p className="border-2  p-0.5 bg-[#056FC5] w-16"></p>
-                <p className="text-[#056FC5] ">Follow our social</p>
-                <FaFacebook className="text-[#056FC5] text-2xl lg:text-4xl" />
+                <FaFacebook className="text-[#056FC5] text-xl lg:text-4xl" />
               </div>
             </div>
           </div>

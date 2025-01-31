@@ -7,12 +7,12 @@ import { GoArrowRight } from "react-icons/go";
 
 const CTA = () => {
   return (
-    <section className="flex flex-col gap-3">
+    <section className="flex flex-col items-center gap-3">
       {/* first section */}
-      <div className="lg:grid grid-cols-2 mt-10 md:mt-24 flex-col container lg:w-11/12 gap-16 justify-center ">
+      <div className="lg:grid grid-cols-5 mt-10 md:mt-24 flex-col p-5 lg:p-0  lg:w-11/12 gap-16 justify-center ">
         <main
           data-aos="fade-right"
-          className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between  "
+          className=" col-span-3 flex flex-col items-center lg:items-start  lg:justify-between  "
         >
           <div className=" flex items-start py-2 lg:py-0  ">
             <div className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    ">
@@ -61,25 +61,25 @@ const CTA = () => {
 
         <div
           data-aos="fade-left"
-          className="col-span-1 lg:flex justify-end hidden"
+          className="col-span-2 lg:flex justify-end hidden  "
         >
           <Image
             src={"/house1.png"}
             alt="hero"
-            width={600}
+            width={500}
             height={300}
             quality={100}
-            className="object-cover"
+            className="object-cover lg:w-[100rem]"
           />
         </div>
       </div>
 
       {/* section section */}
 
-      <div className="lg:grid grid-cols-2 mt-10 md:mt-24 flex-col container lg:w-11/12 justify-center ">
+      <div className="lg:grid grid-cols-5 mt-10 md:mt-24 flex-col gap-10 p-5 lg:p-0 lg:w-11/12 justify-center ">
         <div
           data-aos="fade-right"
-          className="col-span-1 lg:flex justify-start hidden"
+          className="col-span-2 lg:flex justify-start hidden"
         >
           <Image
             src={"/house2.png"}
@@ -92,7 +92,7 @@ const CTA = () => {
         </div>
         <main
           data-aos="fade-left"
-          className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between "
+          className=" col-span-3 flex flex-col items-center lg:items-start  lg:justify-between "
         >
           <div className="lg:text-3xl text- p-3 font-bold text-start bg-white md:p-5 py-3 md:py-5    rounded-md ">
             <p className="space-x-20">

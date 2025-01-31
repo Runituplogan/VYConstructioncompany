@@ -3,7 +3,7 @@ import { BiSolidMessage } from "react-icons/bi";
 
 const Testimonials = () => {
   return (
-    <section className="container mt-24 flex flex-col justify-center bg-[#95A0FE1C] lg:p-10">
+    <section className=" mt-16 flex flex-col  justify-center bg-[#95A0FE1C] lg:p-10 p-5 lg:mx-12">
       <div className=" items-start flex justify-center">
         <div
           data-aos="fade-up"
