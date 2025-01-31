@@ -77,7 +77,7 @@ const About = () => {
 
       {/* section section */}
 
-      <div className="lg:grid grid-cols-3 mt-16 md:mt-24 gap-4 flex-col container  ">
+      <div className="lg:grid grid-cols-3 mt-16 md:mt-24 gap-4 flex-col lg:mx-12 p-5 lg:p-0  ">
         <div className="col-span-1 lg:flex hidden justify-start ">
           <Image
             src={"/12.png"}
