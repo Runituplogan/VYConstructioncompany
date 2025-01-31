@@ -31,7 +31,7 @@ const Testimonials = () => {
               <p className="text-sm">⭐⭐⭐⭐⭐</p>
             </div>
             <p className="p-2 text-[#323232] text-sm">
-              1 quality work! Vitaly replaced 7 sections of fence and their
+              Top quality work! Vitaly replaced 7 sections of fence and their
               posts and built two gates and their posts.. The new fence and
               gates are well-built, strong and good-looking. I can truly echo
               all of the positive comments made by the other reviewers. He is an
@@ -48,19 +48,18 @@ const Testimonials = () => {
           >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
-                George S.  <span className="font-normal">Concord, CA</span>
+                Mathew S.  {" "}
+                <span className="font-normal"> Pleasant Hill, CA</span>
               </p>
               <p className="text-sm">⭐⭐⭐⭐⭐</p>
             </div>
             <p className="p-2 text-[#323232] text-sm">
-              Top quality work! Vitaly replaced 7 sections of fence and their
-              posts and built two gates and their posts.. The new fence and
-              gates are well-built, strong and good-looking. I can truly echo
-              all of the positive comments made by the other reviewers. He is an
-              honest hard working professional, who communicates well and is
-              very conscientious. I appreciate that he gave the care to my
-              project as if it was his own. I will hire him again and highly
-              recommend him.
+              It was great working with Vitaly. He is professional, courteous,
+              skillful, and was always on time. He takes pride in his work, is
+              very conscientious, and has a high integrity. He explained the
+              work in detail and kept the work area clean. He completed a number
+              of projects for me, and I was completely satisfied with the
+              result. I would highly recommend him to anyone.
             </p>
           </div>
 
@@ -70,19 +69,16 @@ const Testimonials = () => {
           >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
-                George S.  <span className="font-normal">Concord, CA</span>
+                Dianne S.   <span className="font-normal"></span>
               </p>
               <p className="text-sm">⭐⭐⭐⭐⭐</p>
             </div>
             <p className="p-2 text-[#323232] text-sm">
-              Top quality work! Vitaly replaced 7 sections of fence and their
-              posts and built two gates and their posts.. The new fence and
-              gates are well-built, strong and good-looking. I can truly echo
-              all of the positive comments made by the other reviewers. He is an
-              honest hard working professional, who communicates well and is
-              very conscientious. I appreciate that he gave the care to my
-              project as if it was his own. I will hire him again and highly
-              recommend him.
+              Really really happy with VY Construction’s work. We had dry rot on
+              our siding and window trim. They were prompt to do an estimate and
+              prompt to do the work. Crew was amazing — cleanup was spotless.
+              Quality of the work was excellent. I’d definitely recommend this
+              company!
             </p>
           </div>
 
@@ -92,19 +88,17 @@ const Testimonials = () => {
           >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
-                George S.  <span className="font-normal">Concord, CA</span>
+                Beverage Chaos ! <span className="font-normal"></span>
               </p>
               <p className="text-sm">⭐⭐⭐⭐⭐</p>
             </div>
             <p className="p-2 text-[#323232] text-sm">
-              Top quality work! Vitaly replaced 7 sections of fence and their
-              posts and built two gates and their posts.. The new fence and
-              gates are well-built, strong and good-looking. I can truly echo
-              all of the positive comments made by the other reviewers. He is an
-              honest hard working professional, who communicates well and is
-              very conscientious. I appreciate that he gave the care to my
-              project as if it was his own. I will hire him again and highly
-              recommend him.
+              Several projects in the last two years - dual pane window
+              replacement, siding replacement, rain gutter cleaning & covering,
+              balcony support & decking repair/replacement. All projects
+              completed on time, on quote, with professional care and all
+              completed while exceeding my expectations. I highly recommend
+              asking VY Construction to look at your construction project!
             </p>
           </div>
 
@@ -114,7 +108,7 @@ const Testimonials = () => {
           >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
-                George S.  <span className="font-normal">Concord, CA</span>
+                Erin W.  <span className="font-normal"></span>
               </p>
               <p className="text-sm">⭐⭐⭐⭐⭐</p>
             </div>
@@ -166,19 +160,13 @@ const Testimonials = () => {
           >
             <div className="flex flex-row justify-between p-2 bg-white rounded-md">
               <p className="font-bold text-sm">
-                George S.  <span className="font-normal">Concord, CA</span>
+                Mike W.  <span className="font-normal">Pittsburg, CA</span>
               </p>
               <p className="text-sm">⭐⭐⭐⭐⭐</p>
             </div>
-            <p className="p-2 text-[#323232] text-sm">
-              Top quality work! Vitaly replaced 7 sections of fence and their
-              posts and built two gates and their posts.. The new fence and
-              gates are well-built, strong and good-looking. I can truly echo
-              all of the positive comments made by the other reviewers. He is an
-              honest hard working professional, who communicates well and is
-              very conscientious. I appreciate that he gave the care to my
-              project as if it was his own. I will hire him again and highly
-              recommend him.
+            <p className="p-2 py-8 text-[#323232] text-sm">
+              Very professional on time and awesome work done. Extremely pleased
+              and would recommend to any one in need of the service.
             </p>
           </div>
         </div>

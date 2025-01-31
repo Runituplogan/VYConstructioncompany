@@ -29,16 +29,16 @@ const WhyChooseUs = () => {
           data-aos="fade-right"
           className="font-bold text-xl flex flex-col gap-2 list-none pl-6"
         >
-          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#056FC5] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
+          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#1f4f11] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
             Free Consultations
           </li>
-          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#056FC5] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
+          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#1f4f11] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
             Exceeded Expectations
           </li>
-          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#056FC5] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
+          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#1f4f11] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
             Licensed & Insured
           </li>
-          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#056FC5] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
+          <li className="relative before:content-[''] before:block before:w-2 before:h-2 before:bg-[#1f4f11] before:absolute before:left-[-1rem] before:top-1/2 before:transform before:-translate-y-1/2">
             High-Quality Results
           </li>
         </ul>

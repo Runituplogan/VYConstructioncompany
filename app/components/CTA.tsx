@@ -20,7 +20,7 @@ const CTA = () => {
               <p className="text-[#056FC5] ]">Who we are </p>
             </div>
           </div>
-          <p className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium">
+          <p className="lg:text-2xl md:text-xl text- text-[#323232] font-medium">
             At VY Construction, we understand that it&apos;s important for your
             home to look its best. That&apos;s why our team consists of
             experienced professionals who are committed to providing quality
@@ -52,11 +52,14 @@ const CTA = () => {
             </p>
           </div>
 
-          <div className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-xl">
+          <Link
+            href={"https://www.facebook.com/Vyconstruction"}
+            className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-xl"
+          >
             <p className="border-2  p-0.5 bg-[#056FC5] w-16"></p>
             <p className="text-[#056FC5] ">Follow our social</p>
             <FaFacebook className="text-[#056FC5] text-2xl lg:text-4xl" />
-          </div>
+          </Link>
         </main>
 
         <div
@@ -84,7 +87,7 @@ const CTA = () => {
           <Image
             src={"/house2.png"}
             alt="hero"
-            width={500}
+            width={1000}
             height={300}
             quality={100}
             className="object-cover"
@@ -120,7 +123,7 @@ const CTA = () => {
 
           <p
             data-aos="fade-left"
-            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text- text-[#323232] font-medium"
           >
             With our experience and dedication to providing excellent services,
             you can trust that your home will look its best with VY

@@ -89,9 +89,9 @@ const Ourservice = () => {
               Siding
             </p>
             <p className="md:text-start text-start md:text-xl text-sm">
-              Our experienced contractors provide personalized solutions that
-              not only look great but also help protect your home against
-              moisture damage and other hazards.
+              Our experienced team provide personalized solutions that not only
+              look great but also help protect your home against moisture damage
+              and other hazards.
             </p>
           </div>
         </div>
@@ -172,9 +172,9 @@ const Ourservice = () => {
               Exterior Repairs
             </p>
             <p className="md:text-start text-start md:text-xl text-sm">
-              We use only the finest materials for our deck builds, so you can
-              rest assured your new deck will stand up to weather and wear over
-              time.
+              We use only the finest materials for our project builds, so you
+              can rest assured your new deck will stand up to weather and wear
+              over time.
             </p>
           </div>
         </div>

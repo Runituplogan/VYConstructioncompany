@@ -26,14 +26,14 @@ const HeroSection = () => {
             type="search"
             id="search"
             className="  w-full p-4  text-sm text-gray-900  border-gray-300 rounded-lg"
-            placeholder="Enter your Phone Number"
+            placeholder="Enter your phone number"
             required
           />
           <button
             type="submit"
             className="text-white absolute end-2.5 bottom-2.5 bg-[#056FC5]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs md:text-sm md:px-4 px-2 py-2 "
           >
-            Get Free Estimate
+            Get free estimate
           </button>
         </div>
       </form>

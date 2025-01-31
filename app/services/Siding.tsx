@@ -21,7 +21,7 @@ const Siding = () => {
             At VY Construction, we understand the importance of having a
             beautiful home exterior to be proud of. That’s why we specialize in
             siding services for residential homes; from large-scale projects to
-            smaller fixes and upgrades. Our experienced contractors provide
+            smaller fixes and upgrades. Our experienced team provide
             personalized solutions that not only look great but also help
             protect your home against moisture damage and other hazards. With
             our attention to detail and commitment to customer satisfaction, you
