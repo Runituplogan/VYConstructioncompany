@@ -16,7 +16,7 @@ const Siding = () => {
           </div>
           <p
             data-aos="fade-right"
-            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-start text-[#323232] font-medium"
           >
             At VY Construction, we understand the importance of having a
             beautiful home exterior to be proud of. That’s why we specialize in
@@ -107,7 +107,7 @@ const Siding = () => {
         </div>
         <p
           data-aos="fade-right"
-          className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium"
+          className="lg:text-xl md:text-xl text-start text-[#323232] font-medium"
         >
           VY Construction offers the best gutter guard installation services in
           the region. Our experienced team of professionals are committed to

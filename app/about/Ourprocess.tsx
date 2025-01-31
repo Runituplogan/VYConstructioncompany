@@ -16,8 +16,8 @@ const Ourprocess = () => {
           className="lg:text-3xl font-bold text-xl text-center lg:text-start  "
         >
           <p data-aos="fade-up" className="space-x-20 text-[#032759] ">
-            Streamlined Solutions, Streamlined .
-            <span className="text-[#056FC5]"> Results</span>
+            Streamlined Solutions, Streamlined
+            <span className="text-[#056FC5]"> Results.</span>
           </p>
         </div>
 

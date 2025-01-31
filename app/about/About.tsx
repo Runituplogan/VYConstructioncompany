@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsHouseDoorFill } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
@@ -67,11 +68,14 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-xl">
-            <p className="border-2  p-0.5 bg-[#056FC5] w-16"></p>
-            <p className="text-[#056FC5] ">Follow our social</p>
+          <Link
+            href={"https://www.facebook.com/Vyconstruction "}
+            className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-xl"
+          >
             <FaFacebook className="text-[#056FC5] text-2xl lg:text-4xl" />
-          </div>
+            <p className="text-[#056FC5] ">Follow our social</p>
+            <p className="border-2  p-0.5 bg-[#056FC5] w-16"></p>
+          </Link>
         </main>
       </div>
 
@@ -127,7 +131,7 @@ const About = () => {
             </div>
             <p
               data-aos="fade-right"
-              className="lg:text-2xl col-span-1 md:text-xl text-justify text-[#323232] font-medium"
+              className="lg:text-[28px] leading-10 col-span-1 md:text-xl text- text-[#323232] font-medium"
             >
               At VY Construction, we take pride in providing quality exterior
               repair and improvement services. We understand that not everyone

@@ -19,7 +19,7 @@ const Paglory = () => {
           </div>
           <p
             data-aos="fade-right"
-            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-start text-[#323232] font-medium"
           >
             At VY Construction, we understand that you want to make the most out
             of your outdoor space. That&apos;s why we specialize in building
@@ -45,7 +45,7 @@ const Paglory = () => {
 
           <p
             data-aos="fade-right"
-            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-start text-[#323232] font-medium"
           >
             We use high-quality materials and proven construction techniques to
             ensure that your new pergola or patio cover is built according to

@@ -28,7 +28,7 @@ const Exterior = () => {
               <p className="text-[#032759] text-3xl ">Exterior Repairs</p>
             </div>
           </div>
-          <p className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium">
+          <p className="lg:text-2xl md:text-xl text- text-[#323232] font-medium">
             At VY Construction, we understand that your home is your most
             valuable asset and the exterior of your home plays an important role
             in its visual appeal and overall value. That&apos;s why we take the
@@ -54,7 +54,7 @@ const Exterior = () => {
 
           <p
             data-aos="fade-right"
-            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text- text-[#323232] font-medium"
           >
             Our team of experienced professionals have worked on countless
             residential and commercial projects over the years, so you can rest
