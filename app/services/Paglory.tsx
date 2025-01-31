@@ -3,10 +3,10 @@ import React from "react";
 
 const Paglory = () => {
   return (
-    <section className="flex flex-col justify-center items-start md:mt-24  container ">
+    <section className="flex flex-col justify-center  lg:p-5 items-center md:mt-24   ">
       {/* first section */}
-      <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
-        <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-10  ">
+      <div className="lg:grid grid-cols-5 mt-10 flex-col p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
+        <main className=" col-span-3 flex flex-col items-center lg:items-start  lg:gap-10  ">
           <div className="  text-center justify-center w-full py-2 lg:py-0  ">
             <div
               data-aos="fade-up"
@@ -19,7 +19,7 @@ const Paglory = () => {
           </div>
           <p
             data-aos="fade-right"
-            className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
           >
             At VY Construction, we understand that you want to make the most out
             of your outdoor space. That&apos;s why we specialize in building
@@ -34,7 +34,7 @@ const Paglory = () => {
             className="col-span-1 flex justify-end lg:hidden py-10"
           >
             <Image
-              src={"/house1.png"}
+              src={"/Group 31.png"}
               alt="hero"
               width={500}
               height={300}
@@ -45,7 +45,7 @@ const Paglory = () => {
 
           <p
             data-aos="fade-right"
-            className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
           >
             We use high-quality materials and proven construction techniques to
             ensure that your new pergola or patio cover is built according to
@@ -59,12 +59,12 @@ const Paglory = () => {
 
         <div
           data-aos="fade-left"
-          className="col-span-1 lg:flex justify-end hidden"
+          className="col-span-2 lg:flex justify-end hidden"
         >
           <Image
-            src={"/house1.png"}
+            src={"/Group 31.png"}
             alt="hero"
-            width={600}
+            width={500}
             height={300}
             quality={100}
             className="object-cover"
@@ -72,7 +72,9 @@ const Paglory = () => {
         </div>
       </div>
 
-      <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
+      {/* second one */}
+
+      <div className="lg:grid grid-cols-3 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
         <div
           data-aos="fade-right"
           className="col-span-1 lg:flex justify-end hidden"
@@ -87,11 +89,11 @@ const Paglory = () => {
           />
         </div>
 
-        <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-10  ">
+        <main className=" col-span-2 flex flex-col items-center lg:items-start  lg:gap-10   ">
           <div className="  text-center justify-center w-full py-2 lg:py-0  "></div>
           <p
             data-aos="fade-left"
-            className="lg:text-xl md:text-xl text-justify text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-justify text-[#323232] font-medium"
           >
             Our commitment to excellence goes beyond the completion of your
             project and extends to providing ongoing maintenance and repair
@@ -115,7 +117,7 @@ const Paglory = () => {
 
           <p
             data-aos="fade-left"
-            className="lg:text-2xl font-bold  md:text-xl text-justify text-[#032759] "
+            className="lg:text-3xl font-bold  md:text-xl text-justify text-[#032759] "
           >
             Whatever your vision is, we can help make it a reality with our
             professional pergola and patio cover services at VY Construction.

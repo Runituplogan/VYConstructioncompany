@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
       {" "}
-      <div className="flex flex-col items-center gap-4 lg:gap-7 py-10 lg:px-44 justify-center text-center container">
+      <div className="flex flex-col items-center gap-4 lg:gap-7 lg:py-10 lg:px-44 justify-center text-center container">
         <p
           data-aos="fade-up"
           className="flex flex-row items-center text-xs font-bricolage p-2 gap-2 bg-[#056FC54D] rounded-lg text-[#056FC5] "

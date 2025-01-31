@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="flex flex-col gap-3">
       {/* first section */}
-      <div className="lg:grid grid-cols-2 mt-10 md:mt-20 flex-col lg:mx-11 p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
+      <div className="lg:grid grid-cols-2 mt-10 md:mt-20 flex-col lg:mx-12 p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
         <div className="col-span-1 lg:flex justify-end hidden">
           <Image
             src={"/Frame 42.png"}
