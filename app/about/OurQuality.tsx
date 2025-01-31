@@ -3,7 +3,7 @@ import React from "react";
 
 const OurQuality = () => {
   return (
-    <section className=" flex flex-col items-center justify-center container lg:w-11/12 mt-10 md:my-28">
+    <section className=" flex flex-col items-center justify-center p-5 lg:p-0 mx-11 lg:w-11/12 mt-10 md:my-28">
       <div className="lg:grid grid-cols-2  flex-col   gap-10 justify-center ">
         <div
           data-aos="fade-right"
@@ -67,7 +67,7 @@ const OurQuality = () => {
       </div>
       <p
         data-aos="fade-up"
-        className="lg:text-sm text-sm font-bold border-2 p-2 lg:p-4 mt-4 lg:m-8 rounded-md text-center lg:w-4/5 border-[#056FC59C] md:text-xl  text-[#323232] "
+        className="lg:text-base text-sm font-bold border-2 p-2 lg:p-4 mt-4 lg:m-8 rounded-md text-center lg:w-4/5 border-[#056FC59C] md:text-xl  text-[#323232] "
       >
         Our commitment goes beyond just quality—we also ensure safety on the job
         site, with all of our workers following a strict code of conduct. We

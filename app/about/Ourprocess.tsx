@@ -4,7 +4,7 @@ import React from "react";
 const Ourprocess = () => {
   return (
     <section className="container mt-24 flex flex-col items-center">
-      <div className="flex flex-col items-center justify-center  shadow-md bg-white p-3 gap-4 lg:w-10/12  rounded-md">
+      <div className="flex flex-col items-center justify-center  shadow-md  p-3 gap-4 lg:w-10/12  rounded-sm">
         <div data-aos="fade-up" className=" flex items-start py-2 lg:py-0  ">
           <div className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    ">
             <p className="text-[#056FC5] ]">Our Process</p>
@@ -23,7 +23,7 @@ const Ourprocess = () => {
 
         <h1
           data-aos="fade-up"
-          className="md:text-2xl text-[#757575] text-center"
+          className="md:text-2xl font-medium text-[#757575] text-center"
         >
           The VY Construction process is designed to ensure the highest quality
           standards of construction and customer satisfaction. The entire
@@ -33,14 +33,17 @@ const Ourprocess = () => {
         </h1>
       </div>
 
-      <div className="bg-[#056FC54] md:px-4 lg:px-20 mt-24 w-full">
+      <div className="bg-[#056FC54] md:px-4 lg:px-20 mt-32 w-full">
         <div className="relative">
-          <div className="bg-[#056FC540]">
-            {/* First Main Section with Background Color */}
-            <main className="flex  flex-col md:flex-row gap-4 lg:px-20">
+          <div className="relative">
+            {/* Background Color Layer */}
+            <div className="absolute top-0 left-0  w-ful lg:w-[80%] lg:h-[70%] bg-[#056FC540]"></div>
+
+            {/* Content Section */}
+            <main className="relative flex flex-col md:flex-row gap-4 lg:px-20">
               <div
                 data-aos="fade-right"
-                className="flex flex-col  items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:w-[60%]"
+                className="flex flex-col items-center gap-4 relative rounded-2xl lg:-top-20 overflow-hidden lg:overflow-visible md:h-[500px] h-[400px] lg:w-[60%]"
               >
                 {/* Image */}
                 <Image
@@ -52,8 +55,8 @@ const Ourprocess = () => {
                 />
 
                 {/* Overlay Text */}
-                <div className="absolute inset-0 z-10  flex flex-col p-8 rounded-2xl gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-                  <div className="lg:-translate-x-6 lg:-translate-y-12 py-4 px-8 bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black lg:w-[90%]">
+                <div className="absolute inset-0 z-10 flex flex-col  p-8 rounded-2xl gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
+                  <div className="lg:-translate-x-6 lg:-translate-y-12 right-10 md:py-4 md:px-8 bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black lg:w-[90%]">
                     <p className="p-3 !pb-1.5 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
                       Preconstruction Design
                     </p>
@@ -67,10 +70,10 @@ const Ourprocess = () => {
                 </div>
               </div>
 
-              {/* Right Section (3 columns) */}
+              {/* Right Section */}
               <div
                 data-aos="fade-left col-span-1"
-                className="lg:w-[40%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible md:h-[350px] h-[400px] lg:!mt-24"
+                className="lg:w-[40%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:overflow-visible lg:top-1 md:h-[430px] h-[400px] lg:!mt-24"
               >
                 {/* Image */}
                 <Image
@@ -82,8 +85,8 @@ const Ourprocess = () => {
                 />
 
                 {/* Overlay Text */}
-                <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold">
-                  <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 !py-4 !px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
+                <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
+                  <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 md:!py-4 md:!px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
                     <p className="p-3 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
                       Design & Construction Estimate
                     </p>
@@ -99,10 +102,10 @@ const Ourprocess = () => {
           </div>
 
           {/* Second Main Section */}
-          <main className="flex flex-col md:flex-row gap-4 !mt-4 h-[100%] w-full">
+          <main className="flex flex-col md:flex-row gap-4 !mt-4 h-[100%] w-full lg:px-20">
             <div
               data-aos="fade-right"
-              className="w-full lg:w-[55%] md:-top-20 flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[350px] h-[400px] lg:-translate-y-18"
+              className="w-full lg:w-[55%] md:-top-20 flex flex-col items-center gap-4 relative rounded-2xl lg:-top-14 overflow-hidden md:h-[450px] h-[400px] lg:-translate-y-18"
             >
               <Image
                 src={"/b3.png"}
@@ -112,7 +115,7 @@ const Ourprocess = () => {
                 className="object-cover w-full h-full rounded-2xl"
               />
 
-              <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold !px-3 -translate-y-4">
+              <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/ text-white text-lg font-bold !px-3 -translate-y-4">
                 <div className="bg-white text-[#757575] !px-6 !py-4 p-3 flex flex-col items-center border-2 border-black">
                   <p className="p-3 md:text-2xl lg:text-xl !pb-1.5 font-bold text-[#26343D] rounded-md">
                     On-Site Consultations
@@ -129,7 +132,7 @@ const Ourprocess = () => {
 
             <div
               data-aos="fade-left"
-              className="lg:w-[65%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden md:h-[350px] h-[400px]"
+              className="lg:w-[65%] flex flex-col items-center gap-4 relative rounded-2xl overflow-hidden lg:top- md:h-[500px] h-[400px]"
             >
               <Image
                 src={"/b4.png"}
@@ -139,8 +142,8 @@ const Ourprocess = () => {
                 className="object-cover w-full h-full rounded-2xl"
               />
 
-              <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/50 text-white text-lg font-bold !px-5">
-                <div className="bg-white text-[#757575] p-3 !py-4 !px-6 -translate-y-7 flex flex-col items-center border-2 border-black">
+              <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end border-4  border-black text-white text-lg font-bold !px-5">
+                <div className="bg-white text-[#757575] p-3 lg:!py-4 lg:!px-6 -translate-y-7 flex flex-col items-center border-2 border-black">
                   <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md">
                     The Finishing Touches
                   </p>

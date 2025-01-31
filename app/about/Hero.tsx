@@ -10,7 +10,6 @@ const Hero = () => {
           data-aos="fade-up"
           className="flex flex-row items-center text-xs font-bricolage p-2 gap-2 bg-[#056FC54D] rounded-lg text-[#056FC5] "
         >
-          <Image src="/fig.png" alt="hero" width={20} height={10} />
           About VY Construction
         </p>
         <h1
@@ -21,14 +20,14 @@ const Hero = () => {
           <span className="text-[#056FC5]"> Precision</span>
         </h1>
 
-        <div data-aos="fade-up" className="lg:w-[65rem]   w-[30rem]">
+        <div data-aos="fade-up" className="lg:w-[70rem]   w-[30rem]">
           <Image
-            src="/hero.png"
+            src="/about2.png"
             alt="hero"
             width={1920}
             height={300}
             quality={100}
-            className="object-cover"
+            className="object-cover rounded-lg"
           />
         </div>
       </div>
