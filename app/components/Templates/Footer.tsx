@@ -4,6 +4,7 @@ import { IoLocation } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -73,11 +74,14 @@ const Footer = () => {
                 925-914-7563
               </p>
 
-              <div className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-">
+              <Link
+                href="https://www.facebook.com/Vyconstruction"
+                className="flex flex-row items-center gap-4 py-5 md:py-0 lg:text-"
+              >
                 <p className="text-[#056FC5] font-bold">Follow our social</p>
                 <p className="border-2  p-0.5 bg-[#056FC5] w-16"></p>
                 <FaFacebook className="text-[#056FC5] text-xl lg:text-4xl" />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
