@@ -54,7 +54,7 @@ const page = () => {
                   type="submit"
                   className="text-white absolute end-2.5 bottom-2.5 bg-[#056FC5]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs md:text-sm md:px-4 px-2 py-2 "
                 >
-                  Get free estimate
+                  Get a free estimate
                 </button>
               </div>
             </form>
