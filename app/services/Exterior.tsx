@@ -113,7 +113,7 @@ const Exterior = () => {
 
           <div
             data-aos="fade-left"
-            className="col-span-1 lg:grid flex flex-col-reverse lg:grid-cols-2 gap-6 "
+            className="col-span-1 lg:grid flex flex-col-reverse items-center lg:grid-cols-2 gap-6 "
           >
             <div className="col-span-1">
               <Image

@@ -95,7 +95,7 @@ const About = () => {
         <main className=" col-span-2 flex flex-col items-center lg:items-start  lg:justify-between ">
           <div
             data-aos="fade-up"
-            className="lg:text-3xl font-bold text-xl text-center lg:text-start bg-white md:p-3 p-3 md:py-0  rounded-md "
+            className="lg:text-3xl  font-bold text-xl text-center lg:text-start bg-white md:p-6 p-3 md:py-0  rounded-md "
           >
             <p className="space-x-20 ">
               VY Construction delivers quality exterior repairs and improvements
@@ -118,7 +118,7 @@ const About = () => {
             />
           </div>
 
-          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 justify-end gap-10 py-10">
+          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 items-center justify-end gap-10 py-10">
             <div data-aos="fade-left" className="col-span-1">
               <Image
                 src={"/10.jpeg"}

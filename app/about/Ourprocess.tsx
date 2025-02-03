@@ -87,7 +87,7 @@ const Ourprocess = () => {
                 {/* Overlay Text */}
                 <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
                   <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 md:!py-4 md:!px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-                    <p className="p-3 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
+                    <p className="p-3 md:text-2xl lg:text-xl text-center font-bold text-[#26343D] rounded-md">
                       Design & Construction Estimate
                     </p>
                     <p className="text-start text-sm md:text-md">
