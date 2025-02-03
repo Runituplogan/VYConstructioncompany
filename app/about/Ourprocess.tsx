@@ -56,8 +56,8 @@ const Ourprocess = () => {
 
                 {/* Overlay Text */}
                 <div className="absolute inset-0 z-10 flex flex-col  p-8 rounded-2xl gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
-                  <div className="lg:-translate-x-6 lg:-translate-y-12 right-10 md:py-4 md:px-8 bg-white text-[#757575] p-3 flex flex-col items-center border-2 border-black lg:w-[90%]">
-                    <p className="p-3 !pb-1.5 md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
+                  <div className="lg:-translate-x-6 gap-2 lg:-translate-y-12 right-10 md:py-4 md:px-8 bg-white text-[#757575] p-3 flex flex-col justify-center items-center border-2 border-black lg:w-[90%]">
+                    <p className=" md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
                       Preconstruction Design
                     </p>
                     <p className="text-start text-sm md:text-md">
@@ -86,8 +86,8 @@ const Ourprocess = () => {
 
                 {/* Overlay Text */}
                 <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
-                  <div className="bg-white lg:w-96 lg:translate-x-12 lg:-translate-y-8 md:!py-4 md:!px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
-                    <p className="p-3 md:text-2xl lg:text-xl text-center font-bold text-[#26343D] rounded-md">
+                  <div className="bg-white lg:w-96 gap-2 lg:translate-x-12 lg:-translate-y-8 md:!py-4 md:!px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
+                    <p className=" md:text-2xl lg:text-xl text-center font-bold text-[#26343D] rounded-md">
                       Design & Construction Estimate
                     </p>
                     <p className="text-start text-sm md:text-md">
@@ -116,8 +116,8 @@ const Ourprocess = () => {
               />
 
               <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/ text-white text-lg font-bold !px-3 -translate-y-4">
-                <div className="bg-white text-[#757575] !px-6 !py-4 p-3 flex flex-col items-center border-2 border-black">
-                  <p className="p-3 md:text-2xl lg:text-xl !pb-1.5 font-bold text-[#26343D] rounded-md">
+                <div className="bg-white text-[#757575] gap-2 !px-6 !py- p-3 flex flex-col items-center border-2 border-black">
+                  <p className=" md:text-2xl lg:text-xl  font-bold text-[#26343D] rounded-md">
                     On-Site Consultations
                   </p>
                   <p className="text-start text-sm md:text-md">
@@ -143,8 +143,8 @@ const Ourprocess = () => {
               />
 
               <div className="absolute inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end border-4  border-black text-white text-lg font-bold !px-5">
-                <div className="bg-white text-[#757575] p-3 lg:!py-4 lg:!px-6 -translate-y-7 flex flex-col items-center border-2 border-black">
-                  <p className="p-3 md:text-2xl font-bold text-[#26343D] rounded-md">
+                <div className="bg-white gap-2 text-[#757575] p-3 lg:!py- lg:!px-6 -translate-y-7 flex flex-col items-center border-2 border-black">
+                  <p className=" md:text-xl font-bold text-[#26343D] rounded-md">
                     The Finishing Touches
                   </p>
                   <p className="text-start text-sm md:text-md">
