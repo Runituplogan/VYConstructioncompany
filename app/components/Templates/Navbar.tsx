@@ -2,18 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // Add useEffect
 import { IoCall } from "react-icons/io5";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { FaChevronDown } from "react-icons/fa"; // Import a dropdown icon
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
+
+  // Add scroll padding dynamically
+  useEffect(() => {
+    const navbar = document.querySelector("nav"); // Replace "nav" with the selector for your navbar
+    if (navbar) {
+      const navbarHeight = navbar.offsetHeight;
+      document.documentElement.style.scrollPaddingTop = `${navbarHeight}px`;
+    }
+  }, []);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -38,16 +47,15 @@ const Navbar = () => {
 
   const handleMouseEnter = () => {
     if (hoverTimeout) {
-      clearTimeout(hoverTimeout); // Clear any existing timeout
+      clearTimeout(hoverTimeout);
     }
-    setServicesOpen(true); // Open the dropdown
+    setServicesOpen(true);
   };
 
   const handleMouseLeave = () => {
-    // Set a timeout to close the dropdown after a short delay
     const timeout = setTimeout(() => {
       setServicesOpen(false);
-    }, 300); // 300ms delay
+    }, 300);
     setHoverTimeout(timeout);
   };
 
@@ -56,7 +64,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-white lg:px- lg:py- lg:my-6 lg:mx-12 rounded-md shadow-md">
+    <nav className="sticky top-0 z-50 bg-white lg:px- lg:py- lg:my-6 lg:mx-12 rounded-md shadow-md">
       <div className="flex justify-between items-center px-6 py-4 md:px-8 lg:px-8">
         {/* Logo */}
         <Link href="/">
@@ -100,8 +108,8 @@ const Navbar = () => {
               {item.subItems && servicesOpen && (
                 <div
                   className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 py-2 w-56"
-                  onMouseEnter={handleMouseEnter} // Keep dropdown open when hovering over it
-                  onMouseLeave={handleMouseLeave} // Close dropdown when mouse leaves
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                 >
                   {item.subItems.map((subItem) => (
                     <Link
@@ -212,7 +220,7 @@ const Navbar = () => {
           925-914-7536
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

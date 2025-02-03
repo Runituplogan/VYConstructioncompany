@@ -56,3 +56,7 @@ body {
   height: 60px;
   animation: spin 1s linear infinite;
 }
+
+html {
+  scroll-padding-top: 100px; /* Adjust this value to match the height of your navbar */
+}
