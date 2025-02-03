@@ -6,7 +6,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const WhyChooseUs = () => {
   return (
-    <section className="mt-24  p-5 lg:mr-44  flex flex-col lg:flex-row items-center justify-center relative">
+    <section className="lg:mt-24 mt-6  p-5 lg:mr-44  flex flex-col lg:flex-row items-center justify-center relative">
       {/* Main Content */}
       <main className="flex flex-col gap-5 md:p-6 rounded-lg  z-10   relative lg:-right-32">
         <div

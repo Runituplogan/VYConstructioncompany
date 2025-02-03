@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className=" p-5 lg:p-0 mt-16 flex flex-col lg:mx-16 ">
+    <section className=" p-5 lg:p-0 md:mt-16 flex flex-col lg:mx-16 ">
       <h1 className="font-bold hidden md:flex text-xl py-7 lg:text-3xl text-[#032759]">
         Get in touch with us
       </h1>

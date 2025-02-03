@@ -45,6 +45,10 @@ const Navbar = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const toggleServices = () => {
+    setServicesOpen((prev) => !prev); // Toggle the dropdown state
+  };
+
   const handleMouseEnter = () => {
     if (hoverTimeout) {
       clearTimeout(hoverTimeout);
@@ -181,16 +185,21 @@ const Navbar = () => {
                 }
               }}
             >
-              <Link
-                href={item.href}
-                className={clsx(
-                  "hover:text-blue-600 transition flex items-center gap-1",
-                  pathname === item.href
-                    ? "text-blue-600 font-semibold"
-                    : "text-black"
-                )}
+              <div
+                className="flex items-center gap-1 cursor-pointer"
+                onClick={item.subItems ? toggleServices : undefined}
               >
-                {item.label}
+                <Link
+                  href={item.href}
+                  className={clsx(
+                    "hover:text-blue-600 transition",
+                    pathname === item.href
+                      ? "text-blue-600 font-semibold"
+                      : "text-black"
+                  )}
+                >
+                  {item.label}
+                </Link>
                 {item.subItems && (
                   <FaChevronDown
                     className={clsx(
@@ -199,8 +208,8 @@ const Navbar = () => {
                     )}
                   />
                 )}
-              </Link>
-              {item.subItems && (
+              </div>
+              {item.subItems && servicesOpen && (
                 <div className="mt-2 flex flex-col items-center">
                   {item.subItems.map((subItem) => (
                     <Link

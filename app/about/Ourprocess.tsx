@@ -33,7 +33,7 @@ const Ourprocess = () => {
         </h1>
       </div>
 
-      <div className="bg-[#056FC54] md:px-4 lg:px-20 mt-32 w-full">
+      <div className="bg-[#056FC54] md:px-4 lg:px-20 md:mt-32 w-full">
         <div className="relative">
           <div className="relative">
             {/* Background Color Layer */}

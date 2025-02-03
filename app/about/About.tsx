@@ -106,7 +106,7 @@ const About = () => {
 
           <div
             data-aos="fade-right"
-            className="col-span-1 flex lg:hidden py-7 justify-start "
+            className="col-span-1 flex lg:hidden py-2 justify-start "
           >
             <Image
               src={"/12.png"}
@@ -118,7 +118,7 @@ const About = () => {
             />
           </div>
 
-          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 items-center justify-end md:gap-10 py-10">
+          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 items-center justify-end md:gap-10 md:py-10">
             <div data-aos="fade-left" className="col-span-1">
               <Image
                 src={"/10.jpeg"}
@@ -131,7 +131,7 @@ const About = () => {
             </div>
             <p
               data-aos="fade-right"
-              className="lg:text-[28px] lg:leading-10 col-span-1 md:text-xl text- text-[#323232] font-medium"
+              className="lg:text-[28px]  py-6 md:py-0 lg:leading-10 col-span-1 md:text-xl text- text-[#323232] font-medium"
             >
               At VY Construction, we take pride in providing quality exterior
               repair and improvement services. We understand that not everyone
