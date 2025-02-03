@@ -3,7 +3,7 @@ import React from "react";
 
 const Siding = () => {
   return (
-    <section className="flex flex-col mt-10 lg:mt-24 lg:gap-16  lg:p-0">
+    <section className="flex flex-col md:mt-10 lg:mt-24 lg:gap-16  lg:p-0">
       <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
         <main
           id="siding"

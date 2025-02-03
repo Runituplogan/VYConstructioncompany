@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="flex flex-col gap-3">
       {/* first section */}
-      <div className="lg:grid grid-cols-2 mt-10 md:mt-20 flex-col lg:mx-12 p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
+      <div className="lg:grid grid-cols-2 mt-6 md:mt-20 flex-col lg:mx-12 p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
         <div className="col-span-1 lg:flex justify-end hidden">
           <Image
             src={"/Frame 42.png"}
@@ -81,7 +81,7 @@ const About = () => {
 
       {/* section section */}
 
-      <div className="lg:grid grid-cols-3 mt-16 md:mt-24 gap-4 flex-col lg:mx-12 p-5 lg:p-0  ">
+      <div className="lg:grid grid-cols-3 mt- md:mt-24 gap-4 flex-col lg:mx-12 p-5 lg:p-0  ">
         <div className="col-span-1 lg:flex hidden justify-start ">
           <Image
             src={"/12.png"}
@@ -118,7 +118,7 @@ const About = () => {
             />
           </div>
 
-          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 items-center justify-end gap-10 py-10">
+          <div className="col-span-1 lg:grid  flex flex-col-reverse lg:grid-cols-2 items-center justify-end md:gap-10 py-10">
             <div data-aos="fade-left" className="col-span-1">
               <Image
                 src={"/10.jpeg"}
@@ -131,7 +131,7 @@ const About = () => {
             </div>
             <p
               data-aos="fade-right"
-              className="lg:text-[28px] leading-10 col-span-1 md:text-xl text- text-[#323232] font-medium"
+              className="lg:text-[28px] lg:leading-10 col-span-1 md:text-xl text- text-[#323232] font-medium"
             >
               At VY Construction, we take pride in providing quality exterior
               repair and improvement services. We understand that not everyone

@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <section className="md:mt-16 mt-10  flex flex-col lg:flex-row items-center justify-center md:relative md:right-20">
+      <section className="md:mt-16 mt-10  p-5 md:p-0 flex flex-col lg:flex-row items-center justify-center md:relative md:right-20">
         {/* Main Content */}
         <main className="flex flex-col gap-10 md:gap-5 md:p-6 rounded-lg  md:z-10   md:relative lg:-right-32">
           <div

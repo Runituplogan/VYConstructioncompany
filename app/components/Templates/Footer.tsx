@@ -12,7 +12,7 @@ const Footer = () => {
       <h1 className="font-bold hidden md:flex text-xl py-7 lg:text-3xl text-[#032759]">
         Get in touch with us
       </h1>
-      <main className=" flex flex-col-reverse gap-10 lg:flex-row md:justify-between ">
+      <main className=" flex flex-col gap-10 lg:flex-row md:justify-between ">
         {/* first side  */}
         <div className="flex flex-col  lg:flex-row gap-4 mt-5 items-center">
           <h1 className="font-bold md:hidden flex text-xl py-7 lg:text-3xl text-[#032759]">

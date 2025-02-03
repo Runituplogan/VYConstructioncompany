@@ -5,7 +5,7 @@ const Paglory = () => {
   return (
     <section className="flex flex-col justify-center  lg:p-5 items-center md:mt-10   ">
       {/* first section */}
-      <div className="lg:grid grid-cols-5 mt-10 flex-col p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
+      <div className="lg:grid grid-cols-5 md:mt-10 flex-col p-5 lg:p-0  lg:w-11/12 gap-10 justify-center ">
         <main
           id="pergolas"
           className=" col-span-3 flex flex-col items-center lg:items-start  lg:gap-10  "
@@ -77,7 +77,7 @@ const Paglory = () => {
 
       {/* second one */}
 
-      <div className="lg:grid grid-cols-3 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
+      <div className="lg:grid grid-cols-3 md:mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
         <div
           data-aos="fade-right"
           className="col-span-1 lg:flex justify-end hidden"

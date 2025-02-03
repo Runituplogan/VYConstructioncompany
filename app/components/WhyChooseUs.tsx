@@ -25,6 +25,10 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
+        <div data-aos="fade-left" className="relative z-0  md:hidden">
+          <Image src="/why.png" alt="Why Choose Us" width={570} height={500} />
+        </div>
+
         <ul
           data-aos="fade-right"
           className="font-bold text-xl flex flex-col gap-2 list-none pl-6"
@@ -42,9 +46,6 @@ const WhyChooseUs = () => {
             High-Quality Results
           </li>
         </ul>
-        <div data-aos="fade-left" className="relative z-0  md:hidden">
-          <Image src="/why.png" alt="Why Choose Us" width={570} height={500} />
-        </div>
 
         <div data-aos="fade-right" className="flex w-full md:items-start">
           <Link

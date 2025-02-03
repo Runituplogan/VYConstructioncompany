@@ -3,7 +3,7 @@ import React from "react";
 
 const Exterior = () => {
   return (
-    <section className="mt-6 md:mt-30 flex-col flex justify-center p-5 lg:p-0 items-center    ">
+    <section className="mt-2 md:mt-30 flex-col flex justify-center p-5 lg:p-0 items-center    ">
       <div className="lg:grid grid-cols-2 lg:mt-10 flex-col  lg:w-11/12 gap-10 justify-center ">
         <div
           data-aos="fade-right"
@@ -103,7 +103,7 @@ const Exterior = () => {
 
           <div
             data-aos="fade-right"
-            className="col-span-1 flex lg:hidden justify-start py-8  "
+            className="col-span-1 flex lg:hidden justify-start md:py-8  "
           >
             <Image
               src={"/g1.png"}

@@ -3,7 +3,7 @@ import React from "react";
 
 const Ourservice = () => {
   return (
-    <section className="p-5 mt-24 flex flex-col items-center w-full ">
+    <section className="p-5 md:mt-24 flex flex-col items-center w-full ">
       <h1
         data-aos="fade-up"
         className="md:text-4xl text-2xl text-[#032759] font-bold"
@@ -12,7 +12,7 @@ const Ourservice = () => {
       </h1>
 
       {/* First Section */}
-      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 mt-10  w-full lg:px-7 ">
+      <main className="grid grid-cols-1 lg:grid-cols-7 gap-4 md:mt-10  w-full lg:px-7 ">
         {/* Left Section (4 columns) */}
         <div
           data-aos="fade-right"

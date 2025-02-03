@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react"; // Add useEffect
+import React, { useState, useEffect } from "react";
 import { IoCall } from "react-icons/io5";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { usePathname } from "next/navigation";
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   // Add scroll padding dynamically
   useEffect(() => {
-    const navbar = document.querySelector("nav"); // Replace "nav" with the selector for your navbar
+    const navbar = document.querySelector("nav");
     if (navbar) {
       const navbarHeight = navbar.offsetHeight;
       document.documentElement.style.scrollPaddingTop = `${navbarHeight}px`;
@@ -161,56 +161,72 @@ const Navbar = () => {
           menuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
+        {/* Close Button */}
+        <div
+          className="absolute top-6 right-6 text-3xl cursor-pointer"
+          onClick={toggleMenu}
+        >
+          <IoMdClose className="text-black hover:text-blue-600 transition" />
+        </div>
+
+        {/* Menu Items */}
         {navItems.map((item) => (
           <div key={item.href} className="text-center">
-            <Link
-              href={item.href}
+            <div
+              className="flex flex-col items-center"
               onClick={() => {
-                toggleMenu();
-                closeServices();
+                if (!item.subItems) {
+                  toggleMenu();
+                  closeServices();
+                }
               }}
-              className={clsx(
-                "hover:text-blue-600 transition flex items-center gap-1",
-                pathname === item.href
-                  ? "text-blue-600 font-semibold"
-                  : "text-black"
-              )}
             >
-              {item.label}
-              {item.subItems && (
-                <FaChevronDown
-                  className={clsx(
-                    "text-sm transition-transform duration-200",
-                    servicesOpen ? "rotate-180" : "rotate-0"
-                  )}
-                />
-              )}
-            </Link>
-            {item.subItems && (
-              <div className="mt-2">
-                {item.subItems.map((subItem) => (
-                  <Link
-                    key={subItem.href}
-                    href={subItem.href}
-                    onClick={() => {
-                      toggleMenu();
-                      closeServices();
-                    }}
+              <Link
+                href={item.href}
+                className={clsx(
+                  "hover:text-blue-600 transition flex items-center gap-1",
+                  pathname === item.href
+                    ? "text-blue-600 font-semibold"
+                    : "text-black"
+                )}
+              >
+                {item.label}
+                {item.subItems && (
+                  <FaChevronDown
                     className={clsx(
-                      "block px-4 py-2 hover:text-blue-600 transition",
-                      pathname === subItem.href
-                        ? "text-blue-600 font-semibold"
-                        : "text-black"
+                      "text-sm transition-transform duration-200",
+                      servicesOpen ? "rotate-180" : "rotate-0"
                     )}
-                  >
-                    {subItem.label}
-                  </Link>
-                ))}
-              </div>
-            )}
+                  />
+                )}
+              </Link>
+              {item.subItems && (
+                <div className="mt-2 flex flex-col items-center">
+                  {item.subItems.map((subItem) => (
+                    <Link
+                      key={subItem.href}
+                      href={subItem.href}
+                      onClick={() => {
+                        toggleMenu();
+                        closeServices();
+                      }}
+                      className={clsx(
+                        "block px-4 py-2 hover:text-blue-600 transition",
+                        pathname === subItem.href
+                          ? "text-blue-600 font-semibold"
+                          : "text-black"
+                      )}
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         ))}
 
+        {/* Call Button for Mobile */}
         <Link
           href="tel:925-914-7536"
           className="p-2 flex gap-1 text-black items-center rounded-full border-2 border-black hover:border-blue-600 hover:text-blue-600 transition"

@@ -3,7 +3,7 @@ import React from "react";
 
 const Ourprocess = () => {
   return (
-    <section className="container mt-24 flex flex-col items-center">
+    <section className="container lg:mt-24 flex flex-col items-center">
       <div className="flex flex-col items-center justify-center  shadow-md  p-3 gap-4 lg:w-10/12  rounded-sm">
         <div data-aos="fade-up" className=" flex items-start py-2 lg:py-0  ">
           <div className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    ">

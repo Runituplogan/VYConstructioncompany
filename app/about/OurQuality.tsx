@@ -3,7 +3,7 @@ import React from "react";
 
 const OurQuality = () => {
   return (
-    <section className=" flex flex-col items-center justify-center p-5 lg:p-0 lg:mx-12 lg:w-11/12 mt-24 ">
+    <section className=" flex flex-col items-center justify-center p-5 lg:p-0 lg:mx-12 lg:w-11/12 mt-5 lg:mt-24 ">
       <div className="lg:grid grid-cols-2  flex-col   gap-10 justify-center ">
         <div
           data-aos="fade-right"
