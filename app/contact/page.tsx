@@ -17,6 +17,9 @@ const page = () => {
             </p>
           </div>
 
+          <div className="md:relative z-0   md:hidden">
+            <Image src="/l1.png" alt="Why Choose Us" width={570} height={500} />
+          </div>
           <div className="font-bold text-xl flex flex-col gap-4 list-none md:pl-">
             <p
               data-aos="fade-left"
@@ -26,15 +29,6 @@ const page = () => {
               Reach out today to discuss your project and discover how we can
               bring your vision to life with quality craftsmanship.
             </p>
-
-            <div className="md:relative z-0 py-8  md:hidden">
-              <Image
-                src="/l1.png"
-                alt="Why Choose Us"
-                width={570}
-                height={500}
-              />
-            </div>
 
             <p className="font-bold text-2xl text-[#323232]">
               Request Your Free Estimate Today!

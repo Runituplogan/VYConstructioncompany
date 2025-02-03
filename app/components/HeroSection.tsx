@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center gap-4 lg:gap-7 md:py-10 lg:px-44 justify-center text-center container">
+    <div className="flex flex-col items-center gap-4 lg:gap-7 mt-8 md:mt-0 md:py-10 lg:px-44 justify-center text-center container">
       <p className="flex flex-row items-center text-xs font-bricolage p-2 gap-2 bg-[#056FC54D] rounded-lg text-[#056FC5] ">
         <Image src="/fig.png" alt="hero" width={20} height={10} />
         Welcome to VY Construction

@@ -151,10 +151,14 @@ const Footer = () => {
 
       <div className="flex lg:flex-row flex-col gap-7 lg:justify-between items-center pt-16 pb-4">
         <Image src={"/logo.png"} alt="" width={100} height={10} />
+        <p className="text-[#757575] font-bold md:hidden items-center gap-2 flex">
+          <IoCall className="" />
+          925-914-7563
+        </p>
 
         <p className="text-[#26343D]">Copyright ©2025. VY Construction</p>
 
-        <p className="text-[#757575] font-bold flex items-center gap-2">
+        <p className="text-[#757575] font-bold md:flex items-center gap-2 hidden">
           <IoCall className="" />
           925-914-7563
         </p>
