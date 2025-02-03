@@ -149,7 +149,7 @@ const Footer = () => {
         </div>
       </main>
 
-      <div className="flex lg:flex-row flex-col gap-4 lg: justify-between items-center pt-16 pb-4">
+      <div className="flex lg:flex-row flex-col gap-7 lg:justify-between items-center pt-16 pb-4">
         <Image src={"/logo.png"} alt="" width={100} height={10} />
 
         <p className="text-[#26343D]">Copyright ©2025. VY Construction</p>
