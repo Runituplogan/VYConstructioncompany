@@ -5,7 +5,10 @@ const Siding = () => {
   return (
     <section className="flex flex-col mt-10 lg:mt-24 lg:gap-16  lg:p-0">
       <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
-        <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-5  ">
+        <main
+          id="Siding"
+          className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-5  "
+        >
           <div
             data-aos="fade-up"
             className="  text-center justify-center w-full py-2 lg:py-0  "
@@ -84,7 +87,10 @@ const Siding = () => {
       </div>
 
       {/* last part  */}
-      <main className=" flex flex-col items-center justify-center lg:items-start p-5 lg:p-0 lg:mx-12 mt-10   lg:gap-5  ">
+      <main
+        id="gutter"
+        className=" flex flex-col items-center justify-center lg:items-start p-5 lg:p-0 lg:mx-12 mt-10   lg:gap-5  "
+      >
         <div className="  text-center flex justify-center w-full py-2 lg:py-0  ">
           <div
             data-aos="fade-up"

@@ -11,16 +11,38 @@ import clsx from "clsx";
 const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/services", label: "Service" },
+    {
+      href: "/services",
+      label: "Service",
+      subItems: [
+        { href: "/services#exterior", label: "Exterior Repair" },
+        {
+          href: "/services#deck",
+          label: "Deck Repairs",
+        },
+        { href: "/services#pergolas", label: "   Pergolas & Patio Covers" },
+        { href: "/services#siding", label: "Siding" },
+        { href: "/services#gutter", label: "  Gutter Guard " },
+      ],
+    },
     { href: "/contact", label: "Contact" },
   ];
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
+  };
+
+  const toggleServices = () => {
+    setServicesOpen((prev) => !prev);
+  };
+
+  const closeServices = () => {
+    setServicesOpen(false);
   };
 
   return (
@@ -40,18 +62,47 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-14 items-center font-medium">
           {navItems.map((item) => (
-            <Link
+            <div
               key={item.href}
-              href={item.href}
-              className={clsx(
-                "hover:text-blue-600 transition",
-                pathname === item.href
-                  ? "text-blue-600 font-semibold"
-                  : "text-black"
-              )}
+              className="relative"
+              onMouseEnter={
+                item.subItems ? () => setServicesOpen(true) : undefined
+              }
+              onMouseLeave={
+                item.subItems ? () => setServicesOpen(false) : undefined
+              }
             >
-              {item.label}
-            </Link>
+              <Link
+                href={item.href}
+                className={clsx(
+                  "hover:text-blue-600 transition",
+                  pathname === item.href
+                    ? "text-blue-600 font-semibold"
+                    : "text-black"
+                )}
+              >
+                {item.label}
+              </Link>
+              {item.subItems && servicesOpen && (
+                <div className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 py-2 w-56">
+                  {item.subItems.map((subItem) => (
+                    <Link
+                      key={subItem.href}
+                      href={subItem.href}
+                      onClick={closeServices}
+                      className={clsx(
+                        "block px-4 py-2 hover:text-blue-600 transition",
+                        pathname === subItem.href
+                          ? "text-blue-600 font-semibold"
+                          : "text-black"
+                      )}
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
 
@@ -85,19 +136,45 @@ const Navbar = () => {
         )}
       >
         {navItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            onClick={toggleMenu}
-            className={clsx(
-              "hover:text-blue-600 transition",
-              pathname === item.href
-                ? "text-blue-600 font-semibold"
-                : "text-black"
+          <div key={item.href} className="text-center">
+            <Link
+              href={item.href}
+              onClick={() => {
+                toggleMenu();
+                closeServices();
+              }}
+              className={clsx(
+                "hover:text-blue-600 transition",
+                pathname === item.href
+                  ? "text-blue-600 font-semibold"
+                  : "text-black"
+              )}
+            >
+              {item.label}
+            </Link>
+            {item.subItems && (
+              <div className="mt-2">
+                {item.subItems.map((subItem) => (
+                  <Link
+                    key={subItem.href}
+                    href={subItem.href}
+                    onClick={() => {
+                      toggleMenu();
+                      closeServices();
+                    }}
+                    className={clsx(
+                      "block px-4 py-2 hover:text-blue-600 transition",
+                      pathname === subItem.href
+                        ? "text-blue-600 font-semibold"
+                        : "text-black"
+                    )}
+                  >
+                    {subItem.label}
+                  </Link>
+                ))}
+              </div>
             )}
-          >
-            {item.label}
-          </Link>
+          </div>
         ))}
 
         <Link

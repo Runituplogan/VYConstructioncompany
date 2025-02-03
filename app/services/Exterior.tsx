@@ -20,6 +20,7 @@ const Exterior = () => {
         </div>
 
         <main
+          id="exterior"
           data-aos="fade-left"
           className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-10  "
         >
@@ -80,7 +81,10 @@ const Exterior = () => {
             className="object-cover"
           />
         </div>
-        <main className=" col-span-3 flex  flex-col items-center lg:items-start  gap-10 ">
+        <main
+          id="deck"
+          className=" col-span-3 flex  flex-col items-center lg:items-start  gap-10 "
+        >
           <div
             data-aos="fade-up"
             className="lg:text-2xl flex flex-col gap-1 text-center lg:text-center"
