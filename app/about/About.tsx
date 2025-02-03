@@ -64,7 +64,7 @@ const About = () => {
               deck looks great while providing a safe and solid build for years
               to come. For those who want an outdoor area where they can relax
               and entertain, we also offer services for building custom decks
-              and pergolas
+              and pergolas.
             </p>
           </div>
 
