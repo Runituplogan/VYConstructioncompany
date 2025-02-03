@@ -136,7 +136,7 @@ const Footer = () => {
               id="message"
               rows={5}
               className="block p-2.5 w-full text-sm  border-[#056FC5] border rounded-lg  text-gray-900 bg-gray-50"
-              placeholder="Leave a comment..."
+              placeholder="Type your message here..."
             ></textarea>
 
             <button

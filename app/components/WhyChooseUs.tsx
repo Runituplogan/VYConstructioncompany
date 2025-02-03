@@ -46,10 +46,10 @@ const WhyChooseUs = () => {
           <Image src="/why.png" alt="Why Choose Us" width={570} height={500} />
         </div>
 
-        <div data-aos="fade-right" className="flex md:items-start">
+        <div data-aos="fade-right" className="flex w-full md:items-start">
           <Link
             href="/contact"
-            className="flex flex-row items-center gap-24 bg-[#056FC5] p-2 text-white rounded-lg lg:text-xl"
+            className="flex flex-row w-full lg:w-fit justify-between lg:justify-start items-center lg:gap-24 bg-[#056FC5] p-2 text-white rounded-lg lg:text-xl"
           >
             <p>Contact us</p>
             <GoArrowRight className="text-2xl lg:text-4xl" />
