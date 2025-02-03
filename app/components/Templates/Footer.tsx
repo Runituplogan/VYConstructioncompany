@@ -143,7 +143,7 @@ const Footer = () => {
               type="submit"
               className="text-white bg-[#056FC5] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
             >
-              Submit your Request
+              Submit your request
             </button>
           </form>
         </div>
