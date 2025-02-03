@@ -37,9 +37,9 @@ const Navbar = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  const toggleServices = () => {
-    setServicesOpen((prev) => !prev);
-  };
+  // const toggleServices = () => {
+  //   setServicesOpen((prev) => !prev);
+  // };
 
   const closeServices = () => {
     setServicesOpen(false);
