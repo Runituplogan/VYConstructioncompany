@@ -26,7 +26,7 @@ const Exterior = () => {
         >
           <div className="  text-center justify-center w-full py-2 lg:py-0  ">
             <div className="flex flex-row text-center items-center justify-center text gap-2 font-bold p-2 rounded-lg bg-white    ">
-              <p className="text-[#032759] text-3xl ">Exterior Repairs</p>
+              <p className="text-[#032759] md:text-3xl ">Exterior Repairs</p>
             </div>
           </div>
           <p className="lg:text-2xl md:text-xl text- text-[#323232] font-medium">

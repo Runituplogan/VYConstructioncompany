@@ -6,7 +6,7 @@ const Siding = () => {
     <section className="flex flex-col mt-10 lg:mt-24 lg:gap-16  lg:p-0">
       <div className="lg:grid grid-cols-2 mt-10 flex-col container lg:w-11/12 gap-10 justify-center ">
         <main
-          id="Siding"
+          id="siding"
           className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-5  "
         >
           <div

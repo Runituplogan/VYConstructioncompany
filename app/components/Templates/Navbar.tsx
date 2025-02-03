@@ -25,7 +25,7 @@ const Navbar = () => {
           href: "/services#deck",
           label: "Deck Repairs",
         },
-        { href: "/services#pergolas", label: "   Pergolas & Patio Covers" },
+        { href: "/services#pergolas", label: "Pergolas & Patio Covers" },
         { href: "/services#siding", label: "Siding" },
         { href: "/services#gutter", label: "  Gutter Guard " },
       ],
