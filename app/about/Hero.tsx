@@ -1,17 +1,26 @@
 import Image from "next/image";
 import React from "react";
+import { BsHouseDoorFill } from "react-icons/bs";
 
 const Hero = () => {
   return (
     <div>
       {" "}
       <div className="flex flex-col items-center gap-4 lg:gap-7 lg:py-10 lg:px-44 justify-center text-center container">
-        <p
+        {/* <p
           data-aos="fade-up"
-          className="flex flex-row items-center mt-8 md:mt-4 text-xs font-bricolage p-2 gap-2 bg-[#056FC54D] rounded-lg text-[#056FC5] "
+          className="flex flex-row items-center text-xs font-bricolage p-2 gap-2 bg-[#056FC54D] rounded-lg text-[#056FC5] "
         >
           About VY Construction
-        </p>
+        </p> */}
+
+        <div
+          data-aos="fade-up"
+          className="flex flex-row items-center  mt-8 md:mt-4 text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    "
+        >
+          <BsHouseDoorFill className="text-[#056FC5] text-xl" />
+          <p className="text-[#056FC5] ]">About VY Construction</p>
+        </div>
         <h1
           data-aos="fade-up"
           className="lg:text-7xl md:text-5xl text-2xl text-[#032759] font-bricolage  font-bold"

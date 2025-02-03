@@ -22,9 +22,16 @@ const About = () => {
 
         <main className=" col-span-1 flex flex-col items-center lg:items-start  lg:justify-between  ">
           <div className=" flex items-start py-2 lg:py-0  ">
+            <p
+              data-aos="fade-up"
+              className="flex  md:hidden flex-row items-center text-xs font-bricolage p-2 gap-2 bg-[#056FC54D] rounded-lg text-[#056FC5] "
+            >
+              About VY Construction
+            </p>
+
             <div
               data-aos="fade-up"
-              className="flex flex-row items-center text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    "
+              className="md:flex flex-row items-center hidden  text gap-2 font-bold p-2 rounded-lg bg-[#056FC533]    "
             >
               <BsHouseDoorFill className="text-[#056FC5] text-xl" />
               <p className="text-[#056FC5] ]">About VY Construction</p>
