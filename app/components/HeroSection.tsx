@@ -16,7 +16,7 @@ const HeroSection = () => {
         <span className="text-[#056FC5]">California</span>
       </h1>
       <p data-aos="fade-up" className="lg:text-4xl text-[#757575] ">
-        Serving Homeowners, HOA&apos;s, Property Management Companies and
+        Serving Homeowners, HOA&apos;s, Property Management Companies, and
         Commercial Properties.
       </p>
       <form data-aos="fade-up" className="lg:w-3/4 w-full">
