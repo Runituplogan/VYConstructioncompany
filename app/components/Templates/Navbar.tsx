@@ -7,11 +7,13 @@ import { IoCall } from "react-icons/io5";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { FaChevronDown } from "react-icons/fa"; // Import a dropdown icon
 
 const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -21,13 +23,10 @@ const Navbar = () => {
       label: "Service",
       subItems: [
         { href: "/services#exterior", label: "Exterior Repair" },
-        {
-          href: "/services#deck",
-          label: "Deck Repairs",
-        },
+        { href: "/services#deck", label: "Deck Repairs" },
         { href: "/services#pergolas", label: "Pergolas & Patio Covers" },
         { href: "/services#siding", label: "Siding" },
-        { href: "/services#gutter", label: "  Gutter Guard " },
+        { href: "/services#gutter", label: "Gutter Guard" },
       ],
     },
     { href: "/contact", label: "Contact" },
@@ -37,9 +36,20 @@ const Navbar = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // const toggleServices = () => {
-  //   setServicesOpen((prev) => !prev);
-  // };
+  const handleMouseEnter = () => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout); // Clear any existing timeout
+    }
+    setServicesOpen(true); // Open the dropdown
+  };
+
+  const handleMouseLeave = () => {
+    // Set a timeout to close the dropdown after a short delay
+    const timeout = setTimeout(() => {
+      setServicesOpen(false);
+    }, 300); // 300ms delay
+    setHoverTimeout(timeout);
+  };
 
   const closeServices = () => {
     setServicesOpen(false);
@@ -65,26 +75,34 @@ const Navbar = () => {
             <div
               key={item.href}
               className="relative"
-              onMouseEnter={
-                item.subItems ? () => setServicesOpen(true) : undefined
-              }
-              onMouseLeave={
-                item.subItems ? () => setServicesOpen(false) : undefined
-              }
+              onMouseEnter={item.subItems ? handleMouseEnter : undefined}
+              onMouseLeave={item.subItems ? handleMouseLeave : undefined}
             >
               <Link
                 href={item.href}
                 className={clsx(
-                  "hover:text-blue-600 transition",
+                  "hover:text-blue-600 transition flex items-center gap-1",
                   pathname === item.href
                     ? "text-blue-600 font-semibold"
                     : "text-black"
                 )}
               >
                 {item.label}
+                {item.subItems && (
+                  <FaChevronDown
+                    className={clsx(
+                      "text-sm transition-transform duration-200",
+                      servicesOpen ? "rotate-180" : "rotate-0"
+                    )}
+                  />
+                )}
               </Link>
               {item.subItems && servicesOpen && (
-                <div className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 py-2 w-56">
+                <div
+                  className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 py-2 w-56"
+                  onMouseEnter={handleMouseEnter} // Keep dropdown open when hovering over it
+                  onMouseLeave={handleMouseLeave} // Close dropdown when mouse leaves
+                >
                   {item.subItems.map((subItem) => (
                     <Link
                       key={subItem.href}
@@ -144,13 +162,21 @@ const Navbar = () => {
                 closeServices();
               }}
               className={clsx(
-                "hover:text-blue-600 transition",
+                "hover:text-blue-600 transition flex items-center gap-1",
                 pathname === item.href
                   ? "text-blue-600 font-semibold"
                   : "text-black"
               )}
             >
               {item.label}
+              {item.subItems && (
+                <FaChevronDown
+                  className={clsx(
+                    "text-sm transition-transform duration-200",
+                    servicesOpen ? "rotate-180" : "rotate-0"
+                  )}
+                />
+              )}
             </Link>
             {item.subItems && (
               <div className="mt-2">
