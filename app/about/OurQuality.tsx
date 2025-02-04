@@ -21,7 +21,7 @@ const OurQuality = () => {
 
         <main
           data-aos="fade-left"
-          className=" col-span-1 flex flex-col items-center lg:items-center lg:gap-10   "
+          className=" col-span-1 flex flex-col items-center lg:items-center lg:justify-center lg:gap-6   "
         >
           <div className=" flex items-start py-2 lg:py-0  ">
             <div className="flex flex-col items-center justify-center text gap-2    ">
@@ -33,7 +33,7 @@ const OurQuality = () => {
               </h1>
             </div>
           </div>
-          <p className="lg:text-xl md:text-xl text- text-[#323232] font-medium">
+          <p className="lg:text-[23px] md:text-xl text- text-[#323232] font-medium">
             At VY Construction, our commitment to quality is unconditional. We
             guarantee that all of our construction products and services will
             meet the highest standards of excellence and accuracy. Our team
@@ -55,7 +55,7 @@ const OurQuality = () => {
             />
           </div>
 
-          <p className="lg:text-xl md:text-xl text- text-[#323232] font-medium">
+          <p className="lg:text-[23px]  md:text-xl text- text-[#323232] font-medium">
             We strive for perfection in every aspect of our work, from design
             and engineering to installation and maintenance. Our experts use the
             most advanced technology and cutting-edge methods to ensure accuracy

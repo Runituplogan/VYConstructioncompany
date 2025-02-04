@@ -79,7 +79,7 @@ const CTA = () => {
 
       {/* section section */}
 
-      <div className="lg:grid grid-cols-5 mt- md:mt-24 flex-col gap-10 p-5 lg:p-0 lg:w-11/12 justify-center ">
+      <div className="lg:grid grid-cols-5 mt- md:mt-24 flex-col gap-10 p-5 lg:p-0 lg:w-11/12 items-center justify-center ">
         <div
           data-aos="fade-right"
           className="col-span-2 lg:flex justify-start hidden"
@@ -95,9 +95,9 @@ const CTA = () => {
         </div>
         <main
           data-aos="fade-left"
-          className=" col-span-3 flex flex-col items-center lg:items-start  lg:justify-between "
+          className=" col-span-3 flex flex-col items-center lg:items-start md:gap-6  "
         >
-          <div className="lg:text-3xl text- p-3 font-bold text-start bg-white md:p-5 py-3 md:py-5    rounded-md ">
+          <div className="lg:text-3xl text- p-3 font-bold text-start bg-white md:p-5 py-3 md:py-5     rounded-md ">
             <p className="space-x-20">
               We specialize in building pergolas and patio covers to give your
               home{" "}

@@ -173,7 +173,6 @@ const Footer = () => {
         </div>
 
         <p className="text-[#26343D]">Copyright ©2025. VY Construction</p>
-
         <p className="text-[#757575] font-bold md:flex items-center gap-2 hidden">
           <IoCall className="" />
           925-914-7563

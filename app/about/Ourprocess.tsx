@@ -55,8 +55,8 @@ const Ourprocess = () => {
                 />
 
                 {/* Overlay Text */}
-                <div className="absolute inset-0 z-10 flex flex-col  p-8 rounded-2xl gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
-                  <div className="lg:-translate-x-6 gap-2 lg:-translate-y-12 right-10 md:py-4 md:px-8 bg-white text-[#757575] p-3 flex flex-col justify-center items-center border-2 border-black lg:w-[90%]">
+                <div className="absolute inset-0 z-10 flex flex-col  p-8 rounded-2xl gap-4  items-center justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
+                  <div className="lg:-translate-x- gap-2 lg:-translate-y-12  md:py-4 md:px-8 bg-white text-[#757575] p-3 flex flex-col justify-center items-center border-2 border-black lg:w-[90%]">
                     <p className=" md:text-2xl lg:text-xl font-bold text-[#26343D] rounded-md">
                       Preconstruction Design
                     </p>
@@ -86,7 +86,7 @@ const Ourprocess = () => {
 
                 {/* Overlay Text */}
                 <div className="absolute z-10 inset-0 flex flex-col p-8 rounded-2xl items-center gap-4 justify-end bg-black/ border-black border-4 text-white text-lg font-bold">
-                  <div className="bg-white lg:w-96 gap-2 lg:translate-x-12 lg:-translate-y-8 md:!py-4 md:!px-6 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
+                  <div className="bg-white lg:w-full gap-2 lg:translate-x- lg:-translate-y-8 md:!py-4 md:!px-4 text-[#757575] p-3 flex flex-col items-center border-2 border-black">
                     <p className=" md:text-2xl lg:text-xl text-center font-bold text-[#26343D] rounded-md">
                       Design & Construction Estimate
                     </p>

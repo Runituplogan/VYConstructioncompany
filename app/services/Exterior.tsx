@@ -4,7 +4,7 @@ import React from "react";
 const Exterior = () => {
   return (
     <section className="mt-2 md:mt-30 flex-col flex justify-center p-5 lg:p-0 items-center    ">
-      <div className="lg:grid grid-cols-2 lg:mt-10 flex-col  lg:w-11/12 gap-10 justify-center ">
+      <div className="lg:grid grid-cols-2 lg:mt-10 flex-col lg:items-center lg:w-11/12 gap-10 justify-center ">
         <div
           data-aos="fade-right"
           className="col-span-1 lg:flex justify-end hidden"
@@ -22,7 +22,7 @@ const Exterior = () => {
         <main
           id="exterior"
           data-aos="fade-left"
-          className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-10  "
+          className=" col-span-1 flex flex-col items-center lg:items-start  lg:gap-9  "
         >
           <div className="  text-center justify-center w-full py-2 lg:py-0  ">
             <div className="flex flex-row text-center items-center justify-center text gap-2 font-bold p-2 rounded-lg bg-white    ">
@@ -67,7 +67,7 @@ const Exterior = () => {
         </main>
       </div>
 
-      <div className="lg:grid grid-cols-5 gap-4 mt-16 md:mt-24  flex-col lg:p-0 lg:mx-16  ">
+      <div className="lg:grid grid-cols-5 gap-4 mt-16 md:mt-24 lg:items-center lg:justify-center flex-col lg:p-0 lg:mx-16  ">
         <div
           data-aos="fade-left"
           className="col-span-2 lg:flex hidden justify-start  "
@@ -83,7 +83,7 @@ const Exterior = () => {
         </div>
         <main
           id="deck"
-          className=" col-span-3 flex  flex-col items-center lg:items-start  gap-10 "
+          className=" col-span-3 flex  flex-col items-center lg:items-start gap-4 lg:gap-1 "
         >
           <div
             data-aos="fade-up"
@@ -92,7 +92,7 @@ const Exterior = () => {
             <p className=" lg:text-3xl bg-white md:p-3 p-3 font-bold text-[#032759]">
               Deck Repairs
             </p>
-            <p className=" lg:text-4xl text-[#032759] font-bold md:p-3 p-3  rounded-md">
+            <p className=" lg:text-3xl text-[#032759] font-bold md:p-3 p-3  rounded-md">
               At VY Construction, we strive to provide our customers with the
               <span className="text-[#056FC5]">
                 {" "}
