@@ -67,7 +67,7 @@ const Footer = () => {
               </p>
               <p className="text-[#757575] flex items-center gap-2">
                 <MdEmail className="" />
-                vyconstructionco@gmail.com
+                vitaly@vyconstructionco.com
               </p>
               <p className="text-[#757575] flex items-center gap-2">
                 <IoCall className="" />
