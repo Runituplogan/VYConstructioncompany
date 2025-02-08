@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* second size  */}
+        {/* second sizeddddd  */}
         <div className="w-full flex flex-col gap-4">
           <h1 className="md:text-3xl font-bold text-[#032759]">
             Let&apos;s Discuss Your
