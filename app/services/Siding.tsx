@@ -65,7 +65,7 @@ const Siding = () => {
                 Fiber Cement Siding Installation
               </li>
               <li className="relative flex items-center before:content-[''] before:block before:w-2 before:h-2 before:bg-[#24534B] before:mr-2">
-                Aluminum Siding Installation
+                Veresetta Stone Siding and Panelsy
               </li>
             </ul>
           </div>
