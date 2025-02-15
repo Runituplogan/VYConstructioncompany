@@ -49,7 +49,7 @@ const Page = () => {
                   </p>
                 </div>
               </div>
-              <div data-aos="fade-bottom" className="md:col-span-2">
+              <div data-aos="fade-left" className="md:col-span-2">
                 <img
                   src={"/rot-wood.png"}
                   alt="rood wood"
@@ -59,7 +59,7 @@ const Page = () => {
             </div>
 
             <div className="flex md:flex-row flex-col justify-stretch items-stretch gap-7 w-full h-">
-              <div data-aos="fade-top" className="order-2">
+              <div data-aos="fade-right" className="order-2">
                 <img
                   src={"/structure-repair.png"}
                   alt="structure repair"
@@ -69,7 +69,7 @@ const Page = () => {
 
               <div className="order-2 space-y-5 xl:space-y-8 w-full xl:w-[360px] flex flex-col justify-stretch 2xl:justify-start items-start h-full">
                 <div
-                  data-aos="fade-top"
+                  data-aos="fade-left"
                   className="rounded-xl border-2 border-[#212121] px-4 py-8 sm:px-5 2xl:py-12 flex flex-col justify-center items-center w-full"
                 >
                   <p className="text-[#26343D] font-bold text-base md:text-lg lg:text-[20px]">
@@ -83,7 +83,7 @@ const Page = () => {
                 </div>
 
                 <div
-                  data-aos="fade-bottom"
+                  data-aos="fade-left"
                   className="rounded-xl border-2 border-[#212121] px-4 py-8 sm:px-5 2xl:py-12 flex flex-col justify-center items-center"
                 >
                   <p className="text-[#26343D] font-bold text-base md:text-lg lg:text-[20px]">
