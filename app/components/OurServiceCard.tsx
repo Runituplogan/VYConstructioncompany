@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface IProps {
   title: string;
   label: string;

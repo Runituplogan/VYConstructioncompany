@@ -39,10 +39,10 @@ const Footer = () => {
 
     emailjs
       .send(
-        process.env.VITE_SERVICE_ID as string,
-        process.env.VITE_TEMPLATE_ID as string,
+        process.env.NEXT_SERVICE_ID as string,
+        process.env.NEXT_TEMPLATE_ID as string,
         formData as any,
-        process.env.VITE_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_KEY
       )
       .then(
         (response) => {
@@ -146,57 +146,6 @@ const Footer = () => {
           <p className="text-[#323232]">
             Fill out the form to set up a free in-home consultation.
           </p>
-
-          {/* <form className="flex flex-col gap-4">
-            <div className="">
-              <input
-                type="name"
-                id="email"
-                className="bg-gray-50 border border-[#056FC5] text-sm rounded-lg lue-500 block w-full p-2.5 "
-                placeholder="Full Name"
-                required
-              />
-            </div>
-
-            <div className=" flex gap-4">
-              <input
-                type="email"
-                id="email"
-                className="bg-gray-50 border border-[#056FC5] text-sm rounded-lg lue-500 block w-full p-2.5 "
-                placeholder="Email"
-                required
-              />
-              <input
-                type="phone number"
-                id="phone"
-                className="bg-gray-50 border border-[#056FC5] text-sm rounded-lg lue-500 block w-full p-2.5 "
-                placeholder="Phone Number"
-                required
-              />
-            </div>
-
-            <input
-              type="name"
-              id="email"
-              className="bg-gray-50 border border-[#056FC5] text-sm rounded-lg lue-500 block w-full p-2.5 "
-              placeholder="Address"
-              required
-            />
-
-            <textarea
-              id="message"
-              rows={5}
-              className="block p-2.5 w-full text-sm  border-[#056FC5] border rounded-lg  text-gray-900 bg-gray-50"
-              placeholder="Type your message here..."
-            ></textarea>
-
-            <button
-              type="submit"
-              className="text-white bg-[#056FC5] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
-            >
-              Submit your request
-            </button>
-          </form> */}
 
           <form onSubmit={sendEmail} className="flex flex-col gap-4">
             <div className="">

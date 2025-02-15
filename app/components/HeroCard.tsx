@@ -1,18 +1,12 @@
-"use client";
-
-import { YDivMotion } from "./DivMotion";
-// import rot_image from "/rot.png";
-import Image from "next/image";
-
 const HeroCard = () => {
   return (
     <div className="flex flex-col items-center gap-4 lg:gap-7 mt-8 md:mt-0 md:py-10 lg:px-20 xl:px-44 justify-center text-center container w-full mx-auto">
-      <YDivMotion className="">
+      <div data-aos="fade-top" className="">
         <h1 className="lg:text-7xl md:text-5xl text-3xl text-[#032759] font-bricolage font-bold aos-init aos-animate">
           Wood Rot Repair Experts in the{" "}
           <span className="text-[#056FC5]">East Bay CA</span>
         </h1>
-      </YDivMotion>
+      </div>
       <form className="lg:w-3/4 w-full bg-white rounded-md mt-10">
         <div className="relative w- ">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"></div>
@@ -33,7 +27,7 @@ const HeroCard = () => {
 
       <img src={"/rot.png"} alt="city" className="rounded-xl" />
 
-      <YDivMotion className="mt-14">
+      <div data-aos="fade-top" className="mt-14">
         <h1 className="md:text-3xl text-xl text-[#032759] font-bricolage font-bold">
           Restore Your Home’s Strength & Beauty
         </h1>
@@ -46,7 +40,7 @@ const HeroCard = () => {
           with exterior repairs, deck repairs, new deck builds, siding and
           gutter guard installation.
         </p>
-      </YDivMotion>
+      </div>
     </div>
   );
 };

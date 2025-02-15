@@ -12,7 +12,7 @@ interface IProps {
 }
 
 const GetInTouch = () => {
-  const [formData, setFormData] = useState<IProps | any>({
+  const [formData, setFormData] = useState<any>({
     name: "",
     email: "",
     phone: "",
