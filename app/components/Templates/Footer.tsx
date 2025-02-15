@@ -39,10 +39,10 @@ const Footer = () => {
 
     emailjs
       .send(
-        process.env.NEXT_SERVICE_ID as string,
-        process.env.NEXT_TEMPLATE_ID as string,
+        "service_5tuujni",
+        "template_b50a5mg",
         formData as any,
-        process.env.NEXT_PUBLIC_KEY
+        "j_wo_bckORjDiNSGn"
       )
       .then(
         (response) => {
