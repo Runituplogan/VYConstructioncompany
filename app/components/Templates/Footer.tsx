@@ -35,20 +35,27 @@ const Footer = () => {
 
   const sendEmail = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
+
     setLoading(true);
 
     emailjs
       .send(
-        "service_5tuujni",
-        "template_b50a5mg",
+        "service_6gs5319",
+        "template_lbfkgql",
         formData as any,
-        "j_wo_bckORjDiNSGn"
+        "apQJg2DtjcCfWOzGP"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setLoading(false);
-          setFormData({ name: "", email: "", phone: "", message: "" });
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+            address: "",
+          });
           toast.success("Request sent successfully!");
         },
         (error) => {

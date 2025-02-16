@@ -7,6 +7,8 @@ import Footer from "./components/Templates/Footer";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOSInitializer from "./components/AOSInitializer"; // Import the AOS initializer
 import Preloader from "./components/Preloader";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,6 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bricolage.className}>
+        <ToastContainer
+          autoClose={2000}
+          hideProgressBar={true}
+          theme="colored"
+        />
         <Preloader />
         <AOSInitializer /> {/* Initialize AOS */}
         <Navbar />
