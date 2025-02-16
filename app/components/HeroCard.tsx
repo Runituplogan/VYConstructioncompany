@@ -17,7 +17,7 @@ const HeroCard = () => {
       .send(
         "service_6gs5319",
         "template_0lzto0f",
-        { phone },
+        { phone, name: "Website Bot" },
         "apQJg2DtjcCfWOzGP"
       )
       .then(
