@@ -66,7 +66,21 @@ const HeroCard = () => {
 
       <img src={"/rot.png"} alt="city" className="rounded-xl" />
 
-      <div data-aos="fade-top" className="mt-14">
+      <div data-aos="fade-top" className="mt-14 md:block hidden">
+        <h1 className="md:text-3xl text-xl text-[#032759] font-bricolage font-bold">
+          Restore Your Home’s Strength & Beauty
+        </h1>
+
+        <p className="lg:text-xl md:text-lg text-base text-[#323232] font-medium mt-4">
+          At VY Construction, we understand that it's important for your home to
+          look its best. That's why our team consists of experienced
+          professionals who are committed to providing quality services. We
+          strive to make sure that your home is attractive and well-maintained,
+          with exterior repairs, deck repairs, new deck builds, siding and
+          gutter guard installation.
+        </p>
+      </div>
+      <div className="mt-14 md:hidden block">
         <h1 className="md:text-3xl text-xl text-[#032759] font-bricolage font-bold">
           Restore Your Home’s Strength & Beauty
         </h1>
