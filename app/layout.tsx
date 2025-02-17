@@ -29,24 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <!-- Google tag (gtag.js) --> */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-RY31XPN22N"
-      ></script>
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-RY31XPN22N"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MW1V59Z339"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-          gtag('config', 'G-RY31XPN22N');
-        `}
-      </Script>
+  gtag('config', 'G-MW1V59Z339');
+</script>
       <body className={bricolage.className}>
         <ToastContainer
           autoClose={2000}
