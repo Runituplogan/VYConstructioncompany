@@ -6,6 +6,7 @@ import Footer from "./components/Templates/Footer";
 import AOSInitializer from "./components/AOSInitializer"; // Import the AOS initializer
 import Preloader from "./components/Preloader";
 import { ToastContainer } from "react-toastify";
+import Script from "next/script";
 import "aos/dist/aos.css"; // Import AOS CSS
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,6 +29,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <!-- Google tag (gtag.js) --> */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-RY31XPN22N"
+      ></script>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-RY31XPN22N"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-RY31XPN22N');
+        `}
+      </Script>
       <body className={bricolage.className}>
         <ToastContainer
           autoClose={2000}
