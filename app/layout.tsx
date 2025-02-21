@@ -141,6 +141,7 @@ export default function RootLayout({
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-MW1V59Z339"
+          strategy="beforeInteractive"
         />
         <Script
           id="google-analytics"
@@ -152,6 +153,7 @@ export default function RootLayout({
               gtag('config', 'G-MW1V59Z339');
             `,
           }}
+          strategy="beforeInteractive"
         />
 
         <ToastContainer autoClose={2000} hideProgressBar theme="colored" />
