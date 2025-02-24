@@ -11,6 +11,8 @@ interface IProps {
   message: string;
 }
 
+
+
 const GetInTouch = () => {
   const [formData, setFormData] = useState<any>({
     name: "",
@@ -36,6 +38,7 @@ const GetInTouch = () => {
       phone_number: formData.phone,
       email: formData.email,
     });
+
 
     emailjs
       .send(
