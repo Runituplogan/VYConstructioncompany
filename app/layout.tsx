@@ -83,7 +83,6 @@
 //   );
 // }
 
-// app/layout.js
 import { Bricolage_Grotesque } from "next/font/google";
 import Navbar from "./components/Templates/Navbar";
 import Footer from "./components/Templates/Footer";
@@ -104,20 +103,6 @@ export const metadata = {
   title: "VY Construction",
   description:
     "Wood rot can silently weaken the structure of your home, leading to costly repairs if left untreated. Our expert team specializes in identifying and repairing wood rot damage, ensuring your home stays strong, safe, and looking its best.",
-  scripts: [
-    {
-      id: "google-tag-manager",
-      dangerouslySetInnerHTML: {
-        __html: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PSLBNBF7');
-        `,
-      },
-    },
-  ],
 };
 
 export default function RootLayout({
@@ -127,23 +112,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bricolage.className}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PSLBNBF7"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-
+      <head>
+        {/* Google Analytics */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-MW1V59Z339"
           strategy="beforeInteractive"
         />
-        {/* <Script
+        <Script
           id="google-analytics"
           dangerouslySetInnerHTML={{
             __html: `
@@ -154,21 +130,32 @@ export default function RootLayout({
             `,
           }}
           strategy="beforeInteractive"
-        /> */}
-
+        />
+        {/* Google Tag Manager */}
         <Script
           id="google-tag-manager"
           dangerouslySetInnerHTML={{
             __html: `
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-PSLBNBF7');
-    `,
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PSLBNBF7');
+            `,
           }}
           strategy="beforeInteractive"
         />
+      </head>
+      <body className={bricolage.className}>
+        {/* Google Tag Manager (noscript fallback) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PSLBNBF7"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
 
         <ToastContainer autoClose={2000} hideProgressBar theme="colored" />
         <Preloader />
