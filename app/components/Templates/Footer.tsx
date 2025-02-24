@@ -147,8 +147,8 @@ const Footer = () => {
         {/* second sizeddddd  */}
         <div className="w-full flex flex-col gap-4">
           <h1 className="md:text-3xl font-bold text-[#032759]">
-            Let&apos;s Discuss Your
-            <span className="text-[#056FC5]">Next Project!</span>
+            Let&apos;s Discuss Your{" "}
+            <span className="text-[#056FC5]"> Next Project!</span>
           </h1>
           <p className="text-[#323232]">
             Fill out the form to set up a free in-home consultation.

@@ -11,8 +11,6 @@ interface IProps {
   message: string;
 }
 
-
-
 const GetInTouch = () => {
   const [formData, setFormData] = useState<any>({
     name: "",
@@ -38,7 +36,6 @@ const GetInTouch = () => {
       phone_number: formData.phone,
       email: formData.email,
     });
-
 
     emailjs
       .send(
@@ -192,7 +189,7 @@ const GetInTouch = () => {
         <div className="w-full flex flex-col gap-4">
           <h1 className="md:text-3xl font-bold text-[#032759]">
             Let's Discuss&nbsp;Your{" "}
-            <span className="text-[#056FC5]">Next Project!</span>
+            <span className="text-[#056FC5]"> Next Projectss!</span>
           </h1>
           <p className="text-[#323232]">
             Fill out the form to set up a free in-home consultation.
