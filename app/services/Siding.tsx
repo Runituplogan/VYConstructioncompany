@@ -14,22 +14,34 @@ const Siding = () => {
             className="  text-center justify-center w-full py-2 lg:py-0  "
           >
             <div className="flex flex-row text-center items-center justify-center text gap-2 font-bold p-2 rounded-lg bg-white    ">
-              <p className="text-[#032759] md:text-3xl text-xl ">Siding</p>
+              <p className="text-[#032759] md:text-3xl text-xl ">
+                Siding Repair & Construction
+              </p>
             </div>
           </div>
           <p
             data-aos="fade-right"
-            className="lg:text-2xl md:text-xl text-start text-[#323232] font-medium"
+            className="lg:text-2xl md:text-xl text-start text-[#323232] font-medium grid gap-2"
           >
-            At VY Construction, we understand the importance of having a
-            beautiful home exterior to be proud of. That’s why we specialize in
-            siding services for residential homes; from large-scale projects to
-            smaller fixes and upgrades. Our experienced team provide
-            personalized solutions that not only look great but also help
-            protect your home against moisture damage and other hazards. With
-            our attention to detail and commitment to customer satisfaction, you
-            can trust us to get the job done right! Contact us today for your
-            free consultation!
+            <span>
+              At VY Construction, we understand the importance of having a
+              beautiful home exterior you can be proud of.
+            </span>
+            <span>
+              We specialize in siding repair and construction services for
+              residential homes. Our team can handle large-scale projects to
+              smaller fixes and upgrades.{" "}
+            </span>
+            <span>
+              We provide personalized solutions that not only look great but
+              also help protect your home against moisture damage and other
+              hazards.{" "}
+            </span>
+            <span>
+              With our attention to detail and commitment to customer
+              satisfaction, you can trust us to get the job done right!
+            </span>
+            <span>Contact us today for your free consultation!</span>
           </p>
 
           <div
