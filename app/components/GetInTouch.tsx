@@ -29,6 +29,14 @@ const GetInTouch = () => {
     e.preventDefault();
     setLoading(true);
 
+    // Push to Google Tag Manager dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "contact_form_submission",
+      phone_number: formData.phone,
+      email: formData.email,
+    });
+
     emailjs
       .send(
         process.env.VITE_SERVICE_ID as string,

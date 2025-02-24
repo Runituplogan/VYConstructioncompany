@@ -12,6 +12,13 @@ const Page = () => {
   const sendEstimationRequest = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
+    // Push to Google Tag Manager dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "free_estimate",
+      phone_number: phone,
+    });
+
     setLoading(true);
 
     emailjs
