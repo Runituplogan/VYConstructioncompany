@@ -38,6 +38,12 @@ const Footer = () => {
 
     setLoading(true);
 
+    window.dataLayer.push({
+      event: "contact_form_submission",
+      phone_number: formData.phone,
+      email: formData.email,
+    });
+
     emailjs
       .send(
         "service_6gs5319",
