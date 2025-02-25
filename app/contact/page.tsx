@@ -23,9 +23,9 @@ const Page = () => {
 
     emailjs
       .send(
-        "service_6gs5319",
+        "service_brl9y2s",
         "template_0lzto0f",
-        { phone },
+        { phone, name: "Website Bot" },
         "apQJg2DtjcCfWOzGP"
       )
       .then(

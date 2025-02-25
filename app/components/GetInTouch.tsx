@@ -39,10 +39,10 @@ const GetInTouch = () => {
 
     emailjs
       .send(
-        process.env.VITE_SERVICE_ID as string,
-        process.env.VITE_TEMPLATE_ID as string,
+        process.env.NEXT_SERVICE_ID as string,
+        process.env.NEXT_PROJECT_ENQUIRY_TEMPLATE_ID as string,
         formData as any,
-        process.env.VITE_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_KEY
       )
       .then(
         (response) => {

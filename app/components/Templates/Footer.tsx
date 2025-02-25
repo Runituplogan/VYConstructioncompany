@@ -46,8 +46,8 @@ const Footer = () => {
 
     emailjs
       .send(
-        "service_6gs5319",
-        "template_lbfkgql",
+        "service_brl9y2s",
+        "template_0lzto0f",
         formData as any,
         "apQJg2DtjcCfWOzGP"
       )
