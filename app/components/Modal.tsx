@@ -22,51 +22,76 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-   const sendEstimationRequest = async (e: { preventDefault: () => void },) => {
-      e.preventDefault();
+  const sendEstimationRequest = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
   
-      setLoading(true);
+    // Basic validation checks
+    if (!/^\S+\s+\S+$/.test(formData.fullName)) {
+      toast.error("Please enter your full name.");
+      return;
+    }
   
-      window.dataLayer.push({
-        event: "free_estimate",
-        phone_number: formData.phone,
-        name:formData.fullName,
-        email:formData.email,
-        estimate:formData.estimate,
-      });
+    if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
   
-      emailjs
-        .send(
-          "service_brl9y2s",
-          "template_0lzto0f",
-          { phone: formData.phone,
-            name: formData.fullName,  
-            email: formData.email,    
-            estimate: formData.estimate},
-          "apQJg2DtjcCfWOzGP"
-        )
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-            setLoading(false);
-            setFormData({
-              fullName: "",
-              email: "",
-              phone: "",
-              estimate: "",
-            });
-            toast.success("Request sent successfully!");
-          },
-          (error) => {
-            console.log("FAILED...", error);
-            setLoading(false);
-          }
-        );
-        onClose()
-    };
+    if (!/^\d{10,15}$/.test(formData.phone)) {
+      toast.error("Please enter a valid phone number (10-15 digits).");
+      return;
+    }
+  
+    if (formData.estimate.trim().length < 10) {
+      toast.error("Please describe what you need an estimate for (at least 10 characters).");
+      return;
+    }
+  
+    setLoading(true);
+  
+    window.dataLayer.push({
+      event: "free_estimate",
+      phone_number: formData.phone,
+      name: formData.fullName,
+      email: formData.email,
+      estimate: formData.estimate,
+    });
+  
+    emailjs
+      .send(
+        "service_brl9y2s",
+        "template_0lzto0f",
+        {
+          phone: formData.phone,
+          name: formData.fullName,
+          email: formData.email,
+          estimate: formData.estimate,
+        },
+        "apQJg2DtjcCfWOzGP"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setLoading(false);
+          setFormData({
+            fullName: "",
+            email: "",
+            phone: "",
+            estimate: "",
+          });
+          toast.success("Request sent successfully!");
+          onClose();
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          setLoading(false);
+          toast.error("Failed to send request. Please try again.");
+        }
+      );
+  };
+  
   return (
     <div 
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm w-full"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm w-full"
       onClick={onClose}
     >
       <div
@@ -84,7 +109,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               onChange={handleChange}
               placeholder="Full Name"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-              required
+              
             />
           </div>
           <div className="relative">
@@ -95,7 +120,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               onChange={handleChange}
               placeholder="Email Address"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-              required
+              
             />
           </div>
 
@@ -107,7 +132,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               onChange={handleChange}
               placeholder="Phone Number"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-              required
+              
             />
           </div>
           <div className="relative">
@@ -117,7 +142,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               onChange={handleChange}
               placeholder="What do you need an estimate for?"
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all resize-none"
-              required
+              
             />
           </div>
 

@@ -47,7 +47,7 @@ const HeroCard = () => {
             disabled={loading}
             onClick={() => setIsModalOpen(true)}
             type="submit"
-            className="disabled:opacity-55 ease transition-all duration-200 text-white bg-[#056FC5]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs md:text-sm md:px-4 px-2 py-2 "
+            className="disabled:opacity-55 ease transition-all duration-200 text-white bg-[#056FC5]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs md:text-sm md:px-6 px-2 py-4 "
           >
             Get a free estimate
       </button>
