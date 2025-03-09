@@ -28,11 +28,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
   const sendEstimationRequest = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Ensure only one name (no spaces)
-    if (!/^\S+$/.test(formData.fullName)) {
-      toast.error("Please enter only one name (no spaces).");
-      return;
-    }
+  // Ensure one or two names (one space allowed)
+if (!/^\S+(?:\s\S+)?$/.test(formData.fullName)) {
+  toast.error("Please enter just one name or two names (with only one space).");
+  return;
+}
+
     
     // Validate email
     if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
