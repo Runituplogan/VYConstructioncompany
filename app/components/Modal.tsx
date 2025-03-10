@@ -70,7 +70,8 @@ if (!/^\S+(?:\s\S+)?$/.test(formData.fullName)) {
         "template_0lzto0f",
         {
           phone: formData.phone,
-          name: formData.fullName,
+          full_name: formData.fullName,
+          name:'website bot',
           email: formData.email,
           estimate: formData.estimate,
         },
@@ -101,7 +102,7 @@ if (!/^\S+(?:\s\S+)?$/.test(formData.fullName)) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm w-full">
       <div
         className="bg-white p-8 relative rounded-lg shadow-lg w-[40rem] animate-fadeIn scale-95 transition-transform duration-300"
-        onClick={(e) => e.stopPropagation()}
+        // onClick={(e) => e.stopPropagation()}
       >
         <FaX
           onClick={onClose}
