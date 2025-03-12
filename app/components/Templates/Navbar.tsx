@@ -138,11 +138,11 @@ const Navbar = () => {
 
         {/* Call Button */}
         <Link
-          href="tel:925-914-7536"
+          href="tel:925-914-7563"
           className="hidden lg:flex p-2 gap-1 items-center rounded-full border-2 border-black hover:border-blue-600 hover:text-blue-600 transition"
         >
           <IoCall className="text-2xl" />
-          925-914-7536
+          925-914-7563
         </Link>
 
         {/* Mobile Hamburger Menu */}
