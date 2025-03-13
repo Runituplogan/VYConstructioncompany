@@ -237,12 +237,12 @@ const Navbar = () => {
 
         {/* Call Button for Mobile */}
         <Link
-          href="tel:925-914-7536"
+          href="tel:925-914-7563"
           className="p-2 flex gap-1 text-black items-center rounded-full border-2 border-black hover:border-blue-600 hover:text-blue-600 transition"
           onClick={toggleMenu}
         >
           <IoCall className="text-2xl" />
-          925-914-7536
+          925-914-7563
         </Link>
       </div>
     </nav>
